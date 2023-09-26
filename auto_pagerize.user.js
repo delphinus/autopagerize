@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20230926T033359+0000
+// @version     0.1.20230926T094334+0000
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "",
+      "insertBefore" : "",
+      "nextLink" : "//a[@class=\"next\"]",
+      "pageElement" : "//div[@class=\"g1-collection-viewport\"]",
+      "url" : "^https://watchjavidol\\.com/"
+   },
    {
       "exampleUrl" : "https://www.lisani.jp/interview/",
       "insertBefore" : "",
