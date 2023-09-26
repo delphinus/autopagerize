@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eux
 if git status -sb; then
   git config user.name "github-actions[bot]"
   git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
