@@ -1,10 +1,11 @@
 #!/usr/bin/env perl
-use strict;
+use 5.10.0;
 use warnings;
 
 use FindBin qw($Bin);
 use JSON qw();
 use Path::Tiny qw(path tempfile);
+use Time::Piece qw(localtime);
 
 my $tmpl = path("$Bin/auto_pagerize.user.js.tmpl");
 my $target = path("$Bin/auto_pagerize.user.js");
@@ -12,10 +13,21 @@ my $url = 'http://wedata.net/databases/AutoPagerize/items_all.json';
 
 die "tmpl not found: $tmpl" unless -f $tmpl;
 
+my $datetime_tag = '%__DATETIME__%';
+(my $original = $target->slurp) =~ s/(\@version\s*0\.0\.)\S+/$1$datetime_tag/;
+
 my $tmp = tempfile;
 0 == system 'sh', '-c', "curl -sL $url > $tmp" or die "curl failed: $!";
 my $json = JSON->new->canonical(1)->pretty(1)->utf8(1);
 my $decoded = $json->decode($tmp->slurp);
 my @site_info = map { $_->{data} } @$decoded;
-(my $output = $tmpl->slurp) =~ s/"%__SITEINFO__%"/$json->encode(\@site_info)/e;
-$target->spew($output);
+(my $renewed = $tmpl->slurp) =~ s/"%__SITEINFO__%"/$json->encode(\@site_info)/e;
+
+if ($renewed eq $original) {
+    say 'no change';
+} else {
+    my $datetime = localtime->strftime('%Y%m%dT%H%M%S%z');
+    say "updated 0.0.$datetime";
+    $renewed =~ s/$datetime_tag/$datetime/;
+    $target->spew($renewed);
+}

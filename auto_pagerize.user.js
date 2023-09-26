@@ -1,9 +1,11 @@
 // ==UserScript==
-// @name        AutoPagerizes
-// @description This is your new userscript, start writing code
+// @name        AutoPagerize
+// @description AutoPagerize script for Tampermonkey
 // @match       *://*.*
-// @include      *
-// @url https://tangerine.hateblo.jp/entry/2021/07/25/152333
+// @include     *
+// @url         https://tangerine.hateblo.jp/entry/2021/07/25/152333
+// @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
+// @version     0.0.20230926T114347+0900
 // ==/UserScript==
 
 // AutoPagerize
