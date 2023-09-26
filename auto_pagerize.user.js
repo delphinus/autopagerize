@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20230926T114949+0900
+// @version     0.1.20230926T033359+0000
 // ==/UserScript==
 
 function autoPagerize() {
