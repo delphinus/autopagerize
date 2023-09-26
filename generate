@@ -14,7 +14,7 @@ my $url = 'http://wedata.net/databases/AutoPagerize/items_all.json';
 die "tmpl not found: $tmpl" unless -f $tmpl;
 
 my $datetime_tag = '%__DATETIME__%';
-(my $original = $target->slurp) =~ s/(\@version\s*0\.0\.)\S+/$1$datetime_tag/;
+(my $original = $target->slurp) =~ s/(\@version\s*\d+\.\d+\.)\S+/$1$datetime_tag/;
 
 my $tmp = tempfile;
 0 == system 'sh', '-c', "curl -sL $url > $tmp" or die "curl failed: $!";
