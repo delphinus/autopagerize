@@ -1,20 +1,19 @@
-#!/usr/bin/perl
-use 5.30.0;
-use feature qw(signatures state);
+#!/usr/bin/env perl
+use strict;
 use warnings;
-no warnings qw(experimental::signatures);
 
+use FindBin qw($Bin);
 use JSON qw();
 use Path::Tiny qw(path tempfile);
 
-my $tmpl = path('tampermonkey/auto_pagerize.js.tmpl');
-my $target = path('tampermonkey/auto_pagerize.js');
-my $url = "http://wedata.net/databases/AutoPagerize/items_all.json";
+my $tmpl = path("$Bin/auto_pagerize.user.js.tmpl");
+my $target = path("$Bin/auto_pagerize.user.js");
+my $url = 'http://wedata.net/databases/AutoPagerize/items_all.json';
 
 die "tmpl not found: $tmpl" unless -f $tmpl;
 
 my $tmp = tempfile;
-0 == system 'sh', '-c', "curl -L $url > $tmp" or die "curl failed: $!";
+0 == system 'sh', '-c', "curl -sL $url > $tmp" or die "curl failed: $!";
 my $json = JSON->new->canonical(1)->pretty(1)->utf8(1);
 my $decoded = $json->decode($tmp->slurp);
 my @site_info = map { $_->{data} } @$decoded;
