@@ -2,7 +2,7 @@ name: Update check
 on:
   push:
   schedule:
-    - cron: '40 * * * *'
+    - cron: '40 */3 * * *'
 jobs:
   build:
     runs-on: macos-latest
