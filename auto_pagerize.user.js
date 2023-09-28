@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20230926T094334+0000
+// @version     0.1.20230928T124844+0000
 // ==/UserScript==
 
 function autoPagerize() {
@@ -208,9 +208,9 @@ function autoPagerize() {
       "url" : "^https?://www\\.igorslab\\.de/.*"
    },
    {
-      "exampleUrl" : "https://young-machine.com/2022/08/06/354094/\r\nhttps://young-machine.com/latest-model/",
+      "exampleUrl" : "https://young-machine.com/2022/08/06/354094/\r\nhttps://young-machine.com/latest-model/\r\nhttps://young-machine.com/2023/09/15/489213/",
       "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a",
-      "pageElement" : "//section[@class='content']|id('wym_custom_archive')",
+      "pageElement" : "//section[@class='content']/*[not((.|preceding-sibling::div)[contains(@class, 'pagination')])]|id('wym_custom_archive')",
       "url" : "^https://young-machine\\.com/"
    },
    {
@@ -17882,10 +17882,10 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?digicafe\\.jp/php/mail_history\\.php"
    },
    {
-      "exampleUrl" : "https://websunday.net/backstage/hata/",
+      "exampleUrl" : "https://websunday.net/author/670/",
       "nextLink" : "//li[@class='prev']/a",
-      "pageElement" : "//article",
-      "url" : "^https://websunday\\.net/backstage/[^/]+/"
+      "pageElement" : "id('bn')/preceding-sibling::*",
+      "url" : "^https://websunday\\.net/author/\\d+"
    },
    {
       "exampleUrl" : "https://www.xda-developers.com/",
