@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20230928T124844+0000
+// @version     0.1.20230929T124822+0000
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://choiyaki.com/",
+      "insertBefore" : "",
+      "nextLink" : "//div[@class='pagination']/span/following-sibling::a",
+      "pageElement" : "//article",
+      "url" : "^https://choiyaki\\.com/"
+   },
    {
       "exampleUrl" : "",
       "insertBefore" : "",
