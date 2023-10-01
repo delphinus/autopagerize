@@ -26,8 +26,8 @@ my @site_info = map { $_->{data} } @$decoded;
 if ($renewed eq $original) {
     say 'no change';
 } else {
-    my $datetime = localtime->strftime('%Y%m%dT%H%M%S%z');
-    say "updated 0.0.$datetime";
+    my $datetime = localtime->strftime('%Y%m%d%H%M%S');
+    say "updated 1.0.$datetime";
     $renewed =~ s/$datetime_tag/$datetime/;
     $target->spew($renewed);
 }
