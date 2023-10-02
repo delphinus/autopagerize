@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20230929T124822+0000
+// @version     0.1.20231002124844
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://roundup-gamers.jp/article/?page=2 https://roundup-gamers.jp/category/hardware/latest/?page=1",
+      "insertBefore" : "",
+      "nextLink" : "//link[@rel='next']",
+      "pageElement" : "//div[@class='news-list']/section",
+      "url" : "^https://roundup-gamers\\.jp/."
+   },
    {
       "exampleUrl" : "https://choiyaki.com/",
       "insertBefore" : "",
@@ -10709,9 +10716,9 @@ function autoPagerize() {
       "url" : "^http://www\\.boxofficescoop\\.com/"
    },
    {
-      "exampleUrl" : "https://gooday.nikkei.co.jp/do/ https://gooday.nikkei.co.jp/atcl/column/14/091100001/102800002/?ST=exercise&P=2",
+      "exampleUrl" : "https://gooday.nikkei.co.jp/do/ https://gooday.nikkei.co.jp/atcl/column/14/091100001/102800002/?ST=exercise&P=2\r\nhttps://gooday.nikkei.co.jp/atcl/column/14/091100006/?i_cid=nbpgdy_sied_list_col\r\nhttps://gooday.nikkei.co.jp/atcl/report/16/033100012/?ST=special&i_cid=nbpgdy_sied_breadcrumb",
       "nextLink" : "//*[@class='gdy-btn-d next']/*",
-      "pageElement" : "//article/div[@class='content']/*|//ul[@class='gdy-newarticle-list gdy-list-a'][not(//article)]/li",
+      "pageElement" : "//div[@class='gdy-pager']/preceding-sibling::*[@class='content' or self::ul or self::h2]",
       "url" : "^https://gooday\\.nikkei\\.co\\.jp/"
    },
    {
