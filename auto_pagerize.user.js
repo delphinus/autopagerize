@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231002124844
+// @version     0.1.20231003034316
 // ==/UserScript==
 
 function autoPagerize() {
@@ -3907,9 +3907,8 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://www.animatetimes.com/news/details.php?id=1578293211",
-      "insertBefore" : "",
       "nextLink" : "//a[contains(concat(\" \",@class,\" \"),\" is-current \")]/following-sibling::a",
-      "pageElement" : "//div[contains(concat(\" \",@class,\" \"),\" news-content \")]",
+      "pageElement" : "//div[@class='c-pagination']/preceding-sibling::*[./preceding-sibling::div]",
       "url" : "^https://www\\.animatetimes\\.com/news/"
    },
    {
@@ -19271,10 +19270,10 @@ function autoPagerize() {
       "url" : "^http://www\\.the-journal\\.jp/contents/[^/]+/\\d{4}/\\d\\d/"
    },
    {
-      "exampleUrl" : "https://www.publickey.jp/blog/09/post_51.html\r\nhttps://www.publickey.jp/bookmarked/09/perl.html\r\nhttps://www.publickey1.jp/blog/10/nosqlcap.html",
-      "nextLink" : "id('maincol')//em[contains(.,'前の記事')]/following-sibling::a",
-      "pageElement" : "//div[@class=\"maincol_inner\"]/*[./following-sibling::ul]",
-      "url" : "^https://(?:www\\.)?publickey1?\\.jp/[^/]+/\\d+/\\w+\\.html"
+      "exampleUrl" : "https://www.publickey1.jp/cloud/",
+      "nextLink" : "//div[@class='content-nav']/p/a",
+      "pageElement" : "//li[./span[@class='date']]",
+      "url" : "^https://(?:www\\.)?publickey1?\\.jp/"
    },
    {
       "exampleUrl" : "https://thetv.jp/news/detail/72686/408175/",
