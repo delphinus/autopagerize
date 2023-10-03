@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231003034316
+// @version     0.1.20231003124839
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://websunday.net/comics/",
+      "insertBefore" : "",
+      "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a",
+      "pageElement" : "//div[@class='p2s1-banner-v__main']/ul|//ul[@class='p1s1-list-v__main']",
+      "url" : "^https://websunday\\.net/(news|comics)/"
+   },
    {
       "exampleUrl" : "https://roundup-gamers.jp/article/?page=2 https://roundup-gamers.jp/category/hardware/latest/?page=1",
       "insertBefore" : "",
@@ -3906,9 +3913,9 @@ function autoPagerize() {
       "url" : "http://d-smart.jp/"
    },
    {
-      "exampleUrl" : "https://www.animatetimes.com/news/details.php?id=1578293211",
+      "exampleUrl" : "https://www.animatetimes.com/news/details.php?id=1578293211\r\nhttps://www.animatetimes.com/news/details.php?id=1696194873\r\nhttps://www.animatetimes.com/news/details.php?id=1696194873&p=2",
       "nextLink" : "//a[contains(concat(\" \",@class,\" \"),\" is-current \")]/following-sibling::a",
-      "pageElement" : "//div[@class='c-pagination']/preceding-sibling::*[./preceding-sibling::div]",
+      "pageElement" : "//div[@class='c-pagination']/preceding-sibling::*[not(contains(@class, 'c-banner-common'))]",
       "url" : "^https://www\\.animatetimes\\.com/news/"
    },
    {
@@ -17895,10 +17902,11 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?digicafe\\.jp/php/mail_history\\.php"
    },
    {
-      "exampleUrl" : "https://websunday.net/author/670/",
-      "nextLink" : "//li[@class='prev']/a",
+      "considerationUrl" : "https://websunday.net/5930/",
+      "exampleUrl" : "https://websunday.net/author/670/ https://websunday.net/6369/",
+      "nextLink" : "//nav/ul/li[@class='prev']/a",
       "pageElement" : "id('bn')/preceding-sibling::*",
-      "url" : "^https://websunday\\.net/author/\\d+"
+      "url" : "^https://websunday\\.net/."
    },
    {
       "exampleUrl" : "https://www.xda-developers.com/",
