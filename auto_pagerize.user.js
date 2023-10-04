@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231003124839
+// @version     0.1.20231004064355
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://saita-puls.com/category/101 https://saita-puls.com/search?k=a",
+      "insertBefore" : "",
+      "nextLink" : "//div[@class='next']/a",
+      "pageElement" : "//ul[@class='articleBox__items']",
+      "url" : "^https://saita-puls\\.com/"
+   },
    {
       "exampleUrl" : "https://websunday.net/comics/",
       "insertBefore" : "",
@@ -11101,9 +11108,10 @@ function autoPagerize() {
       "url" : "^https?://ss2ch\\.r401\\.net/"
    },
    {
-      "exampleUrl" : "https://japan.zdnet.com/sp/ziddy/20197967/\r\nhttps://japan.zdnet.com/sp/enterprise-trend/35011766/\r\nhttps://japan.zdnet.com/article/35148978/\r\n",
-      "nextLink" : "//a[@id='script_pagination_next' and @data-ga_category='zd_article_pagination']|//a[ @class='mediaNext noluke']",
-      "pageElement" : "//div[@class='article_body' or @class='story_photoreport' or @class='article-contents']",
+      "considerationUrl" : "https://japan.zdnet.com/article/35148978/",
+      "exampleUrl" : "https://japan.zdnet.com/article/35011766/ https://japan.zdnet.com/archives/foreign/\r\n\r\n",
+      "nextLink" : "descendant::a[@rel='next'][1][not(@href='#')]",
+      "pageElement" : "//div[@class='article-contents']|//li[.//p[@class='txt-update']]",
       "url" : "^https://japan\\.zdnet\\.com/"
    },
    {
