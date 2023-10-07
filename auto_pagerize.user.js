@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231004064355
+// @version     0.1.20231007124710
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://kurukura.jp/cars/",
+      "insertBefore" : "",
+      "nextLink" : "//link[@rel='next']",
+      "pageElement" : "//div[@class='card-ls-2-container']/a",
+      "url" : "^https://kurukura\\.jp/"
+   },
    {
       "exampleUrl" : "https://saita-puls.com/category/101 https://saita-puls.com/search?k=a",
       "insertBefore" : "",
@@ -6470,9 +6477,9 @@ function autoPagerize() {
       "url" : "^https://www\\.vrutal\\.com/"
    },
    {
-      "exampleUrl" : "http://kabusensor.com/signal/kai/?t_cd=9&s_cd=2&mk=3",
-      "nextLink" : "//li[@class=\"active\"]/following-sibling::li[1]/a",
-      "pageElement" : "//div[contains(concat(' ', normalize-space(@class), ' '), ' mtop10 ')]",
+      "exampleUrl" : "http://kabusensor.com/signal/kai/?t_cd=9&s_cd=2&mk=3\r\nhttps://kabusensor.com/ranking/kaisignal/\r\nhttps://kabusensor.com/ranking/tech/?sh=10&mk=2\r\nhttps://kabusensor.com/screening/?page=2&ma=0&mkt=1&sd=1",
+      "nextLink" : "//li[@class=\"active\"][number()>0]/following-sibling::li[1]/a",
+      "pageElement" : "//div[contains(concat(' ', @class, ' '), ' rating')]/following-sibling::div[contains(concat(' ', @class, ' '), ' clearfix ') and .//a[@href='#cancel']]\r\n|//div[@class='bg_ch']\r\n|//div[@class='rating']/table/tbody/tr",
       "url" : "^https?://kabusensor\\.com/"
    },
    {
