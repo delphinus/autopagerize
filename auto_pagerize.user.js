@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231008010220
+// @version     0.1.20231008034323
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.amazon.co.jp/vine/vine-items?queue=encore",
+      "insertBefore" : "",
+      "nextLink" : "//a[@aria-current='page']/parent::node()/following-sibling::li[1]/a",
+      "pageElement" : "//div[@role=\"navigation\"]",
+      "url" : "^https://www\\.amazon\\.co\\.jp/vine/vine-items"
+   },
    {
       "exampleUrl" : "https://www.kanaloco.jp/zenkoku",
       "insertBefore" : "",
