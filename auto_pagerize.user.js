@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231007124710
+// @version     0.1.20231008010220
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.kanaloco.jp/zenkoku",
+      "insertBefore" : "",
+      "nextLink" : "//a[@rel='next']",
+      "pageElement" : "//section[@class='cont']",
+      "url" : "^https://www\\.kanaloco\\.jp/"
+   },
    {
       "exampleUrl" : "https://kurukura.jp/cars/",
       "insertBefore" : "",
@@ -11507,10 +11514,10 @@ function autoPagerize() {
       "url" : "https://getsatisfaction\\.com/newsblur"
    },
    {
-      "exampleUrl" : "https://www.switch-science.com/catalog/list/1/",
-      "nextLink" : "id('pagination')/p/a[contains(.,'>>')]",
-      "pageElement" : "id('products')/ul/li",
-      "url" : "^https?://www\\.switch-science\\.com/catalog/list/"
+      "exampleUrl" : "https://www.switch-science.com/collections/marketplace",
+      "nextLink" : "//li[@class='pagination--next']/a",
+      "pageElement" : "//li[./div[@class='productitem']]",
+      "url" : "^https?://www\\.switch-science\\.com/"
    },
    {
       "exampleUrl" : "https://www.india.com/photos/all/2/ https://www.india.com/news/world/",
