@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231008064331
+// @version     0.1.20231008094331
 // ==/UserScript==
 
 function autoPagerize() {
@@ -5042,10 +5042,10 @@ function autoPagerize() {
    },
    {
       "comment" : "Without this, the archive design will be corrupted. Probably because autopagerize_insert_before is not in the right place.",
-      "exampleUrl" : "https://srdk.rakuten.jp/archive https://onaji.me/archive https://www.e-aidem.com/ch/listen/archive https://www.hotpepper.jp/mesitsu/archive https://www.fanthology.me/archive https://text.sanographix.net/ https://techtekt.persol-career.co.jp/archive https://tech.nri-net.com/archive/category/Technology https://times.hrbrain.co.jp/?page=1640070118 https://kaelife.hondaaccess.jp/archive https://inside.pixiv.blog/archive",
+      "exampleUrl" : "https://soredoko.jp/archive https://onaji.me/archive https://www.e-aidem.com/ch/listen/archive https://www.hotpepper.jp/mesitsu/archive https://text.sanographix.net/ https://techtekt.persol-career.co.jp/archive https://tech.nri-net.com/archive/category/Technology https://times.hrbrain.co.jp/?page=1640070118 https://kaelife.hondaaccess.jp/archive https://inside.pixiv.blog/archive https://tech.uzabase.com/archive/category/blog",
       "nextLink" : "//a[@rel=\"next\"]",
       "pageElement" : "//*[contains(@class,\"autopagerize_page_element\")]",
-      "url" : "^https://(www\\.)?(srdk|onaji|e-aidem|hotpepper|fanthology|text\\.sanographix|techtekt|tech\\.nri-net|times\\.hrbrain|kaelife|inside\\.pixiv)"
+      "url" : "^https://(www\\.)?(soredoko|onaji|e-aidem|hotpepper|text\\.sanographix|techtekt|tech\\.nri-net|times\\.hrbrain|kaelife|inside\\.pixiv|tech\\.uzabase)"
    },
    {
       "bookmarklet" : "Array.prototype.forEach.call(document.querySelectorAll('img'), function(img) { var lazySrc = img.hasAttribute('data-src') ? img.getAttribute('data-src') : img.getAttribute('data-original'); if (lazySrc) { img.src = lazySrc;} });",
