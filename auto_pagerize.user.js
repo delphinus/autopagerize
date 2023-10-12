@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231008094331
+// @version     0.1.20231012124858
 // ==/UserScript==
 
 function autoPagerize() {
@@ -1182,9 +1182,8 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://cinema.ne.jp/article/detail/49610",
-      "insertBefore" : "",
-      "nextLink" : "//a[@class=\"articleDetailNext\"]",
-      "pageElement" : "//div[@class=\"articleDetailTxtTit\"]",
+      "nextLink" : "//li[contains(concat(' ', @class, ' '), ' pager-active ')]/following-sibling::li[1]/a",
+      "pageElement" : "//div[contains(concat(' ', normalize-space(@class), ' '), ' articleDetailTxt ')]",
       "url" : "^https?://cinema\\.ne\\.jp/article/"
    },
    {
@@ -11520,9 +11519,10 @@ function autoPagerize() {
       "url" : "https://getsatisfaction\\.com/newsblur"
    },
    {
+      "comment" : "ページ下部に作られる『最近閲覧した商品』を取得しないように修正",
       "exampleUrl" : "https://www.switch-science.com/collections/marketplace",
       "nextLink" : "//li[@class='pagination--next']/a",
-      "pageElement" : "//li[./div[@class='productitem']]",
+      "pageElement" : "//ul[@data-productgrid-items]",
       "url" : "^https?://www\\.switch-science\\.com/"
    },
    {
