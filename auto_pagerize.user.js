@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231012124858
+// @version     0.1.20231016094316
 // ==/UserScript==
 
 function autoPagerize() {
@@ -4805,10 +4805,9 @@ function autoPagerize() {
       "url" : "^https://shimeken\\.com/"
    },
    {
-      "exampleUrl" : "https://kimirano.jp/tag/15",
-      "insertBefore" : "",
+      "exampleUrl" : "https://kimirano.jp/tag/15\r\nhttps://kimirano.jp/kakuyomu_contents/",
       "nextLink" : "//div[@class=\"pagination\"]/div[@class=\"ctr_next\"]/a",
-      "pageElement" : "//ul[@class=\"std_lists\"]/li",
+      "pageElement" : "//ul[@class=\"std_lists\" or @class=\"read_lists\"]/li",
       "url" : "^https://kimirano\\.jp/"
    },
    {
