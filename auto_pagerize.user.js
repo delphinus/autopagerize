@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231016094316
+// @version     0.1.20231016124927
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,20 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "",
+      "insertBefore" : "",
+      "nextLink" : "//a[@aria-current='page']/parent::node()/following-sibling::li[1]/a",
+      "pageElement" : "//div[@data-a-name=\"orders\"]",
+      "url" : "^https://www.amazon.co.jp/vine/orders"
+   },
+   {
+      "exampleUrl" : "",
+      "insertBefore" : "",
+      "nextLink" : "//a[@aria-current='page']/parent::node()/following-sibling::li[1]/a",
+      "pageElement" : "//div[@data-a-name=\"vine-reviews\"]",
+      "url" : "^https://www.amazon.co.jp/vine/vine-reviews"
+   },
    {
       "exampleUrl" : "https://www.amazon.co.jp/vine/vine-items?queue=encore",
       "nextLink" : "//a[@aria-current='page']/parent::node()/following-sibling::li[1]/a",
