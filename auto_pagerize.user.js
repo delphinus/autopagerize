@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231016124927
+// @version     0.1.20231018154317
 // ==/UserScript==
 
 function autoPagerize() {
@@ -6225,9 +6225,10 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://www.ecosia.org/search?q=hallo",
-      "nextLink" : "//a[contains(@class, 'pagination-next')]",
-      "pageElement" : "//div[@class='card-desktop card-web']/*",
-      "url" : "^https://(www\\.)?ecosia\\.org/search"
+      "insertBefore" : "//div[@class='pagination']",
+      "nextLink" : "//a[@data-test-id='next-button']",
+      "pageElement" : "//section[@data-test-id='mainline']/div[.//article]",
+      "url" : "^https://www\\.ecosia\\.org/search\\?"
    },
    {
       "exampleUrl" : "https://www.stuttgarter-zeitung.de/gallery.die-besten-veggi-restaurants-in-stuttgart-einmal-ohne-fleisch-bitte.98cc50d1-61bd-4df0-8de5-0f45a745a703.html",
