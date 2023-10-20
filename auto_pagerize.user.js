@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231018154317
+// @version     0.1.20231020094313
 // ==/UserScript==
 
 function autoPagerize() {
@@ -64,10 +64,10 @@ function autoPagerize() {
       "url" : "^https://saita-puls\\.com/"
    },
    {
-      "exampleUrl" : "https://websunday.net/comics/",
-      "insertBefore" : "",
+      "exampleUrl" : "https://websunday.net/comics/\r\nhttps://websunday.net/news/\r\n",
+      "insertBefore" : "//div[@class='content__main']/div[not(@class)]/following-sibling::node()[1]",
       "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a",
-      "pageElement" : "//div[@class='p2s1-banner-v__main']/ul|//ul[@class='p1s1-list-v__main']",
+      "pageElement" : "//div[@class='p2s1-banner-v']|//ul[@class='p1s1-list-v__main']",
       "url" : "^https://websunday\\.net/(news|comics)/"
    },
    {
