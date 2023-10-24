@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231020094313
+// @version     0.1.20231024124827
 // ==/UserScript==
 
 function autoPagerize() {
@@ -9545,7 +9545,7 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://forum.vivaldi.net/category/82/team-blog\r\nhttps://forum.vivaldi.net/topic/20015/vivaldi-1-11-focus-on-accessibility",
-      "nextLink" : "//a[i/@class='fa fa-chevron-right']",
+      "nextLink" : "//li[not(contains(@class, 'disabled'))]/a[i/@class='fa fa-chevron-right']",
       "pageElement" : "//ul[@class='topic-list' or @class='posts']/li",
       "url" : "^https://forum\\.vivaldi\\.net/"
    },
