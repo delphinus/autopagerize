@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231024124827
+// @version     0.1.20231024154324
 // ==/UserScript==
 
 function autoPagerize() {
@@ -23326,10 +23326,10 @@ function autoPagerize() {
       "url" : "^https://dev\\.mysql\\.com/doc/refman/"
    },
    {
-      "exampleUrl" : "http://codezine.jp/article/tag/169\r\nhttp://enterprisezine.jp/article/corner/120\r\nhttp://enterprisezine.jp/article/detail/2221\r\nhttp://markezine.jp/article/\r\nhttp://enterprisezine.jp/article/detail/1991\r\nhttp://codezine.jp/article/corner/210\r\nhttp://codezine.jp/article/detail/2979\r\nhttp://enterprisezine.jp/author/133\r\nhttp://enterprisezine.jp/dbonline/detail/6123\r\nhttp://enterprisezine.jp/iti/detail/5752\r\n",
-      "nextLink" : "//a[@rel='next' or ../@class='nextBtn']",
-      "pageElement" : "//ul[@class='catList' or @class='catTopList result cf']/li|//div[@class='article']",
-      "url" : "^https?://(?:c(?:areer|ode)|enterprise|m(?:arke|oney))zine\\.jp/(?:a(?:rticle|uthor)/|\\w+online/|iti/)"
+      "exampleUrl" : "https://codezine.jp/article/tag/169\r\nhttps://enterprisezine.jp/article/corner/120\r\nhttps://enterprisezine.jp/article/detail/2221\r\nhttps://markezine.jp/article/\r\nhttps://enterprisezine.jp/article/detail/1991\r\nhttps://codezine.jp/article/corner/210\r\nhttps://enterprisezine.jp/author/133\r\nhttps://eczine.jp/article/detail/13259\r\nhttps://bizzine.jp/article/detail/9498\r\nhttps://hrzine.jp/article/detail/5133\r\nhttps://edtechzine.jp/article/detail/9930\r\nhttps://productzine.jp/article/detail/2005",
+      "nextLink" : "//a[@rel='next']|//div[@class='c-pager_next']/a[not(//div[@class='c-article_wall'])]",
+      "pageElement" : "//ul[@class='c-articleindex_list']/ancestor-or-self::*[position()=1 or @class='c-primarysection -level2'][last()]|id('c-article_content')",
+      "url" : "^https?://(?:code|enterprise|marke|ec|biz|hr|edtech|product)zine\\.jp/"
    },
    {
       "exampleUrl" : "http://www.moongift.jp/category/software",
