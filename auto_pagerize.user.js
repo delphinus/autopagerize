@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231024154324
+// @version     0.1.20231026154312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -8265,9 +8265,9 @@ function autoPagerize() {
       "url" : "^https?://best-times\\.jp/(articles|category)/"
    },
    {
-      "exampleUrl" : "https://news.allabout.co.jp/articles/d/73598/",
+      "exampleUrl" : "https://news.allabout.co.jp/articles/d/73598/\r\nhttps://news.allabout.co.jp/articles/o/69926/",
       "nextLink" : "//link[@rel=\"next\"]",
-      "pageElement" : "id('sys_mtx_url')/*",
+      "pageElement" : "id('sys_gtm_url')/*[not(@class='aa-article-content-related-article' or starts-with(@id, 'logly-lift-') or self::script)]",
       "url" : "^https://news\\.allabout\\.co\\.jp/"
    },
    {
