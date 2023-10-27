@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231026154312
+// @version     0.1.20231027010119
 // ==/UserScript==
 
 function autoPagerize() {
@@ -11592,7 +11592,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "https://www.deadline.com/ https://deadline.com/vcategory/the-contenders-emmys/page/2/ https://deadline.com/tag/caa/page/2/ https://www.bollywoodlife.com/ https://footwearnews.com/page/2/",
       "nextLink" : "descendant::a[contains(@class,'next')][last()]|//div[@class='nav-previous']/a|//div[contains(@class,'more-stories')]/a[contains(@class,'a-icon-right-arrow')]",
-      "pageElement" : "//div[contains(@class,'a-archive-grid__story')]|descendant::*[div[contains(@class,'o-card')]][1]|//div[@class='story_list_blk']/*|//li[@class='l-list__item'][article]|id('main')/article[@id]",
+      "pageElement" : "//div[contains(@class,'a-archive-grid__story')]|//section[@class='pmc-u-margin-tb-1']//*[div[contains(@class,'o-card')]][1]|//div[@class='story_list_blk']/*|//li[@class='l-list__item'][article]|id('main')/article[@id]",
       "url" : "^https?://.*(?:bollywoodlife|deadline|footwearnews)\\.com"
    },
    {
