@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231027010119
+// @version     0.1.20231029010211
 // ==/UserScript==
 
 function autoPagerize() {
@@ -11143,7 +11143,7 @@ function autoPagerize() {
    {
       "considerationUrl" : "https://japan.zdnet.com/article/35148978/",
       "exampleUrl" : "https://japan.zdnet.com/article/35011766/ https://japan.zdnet.com/archives/foreign/\r\n\r\n",
-      "nextLink" : "descendant::a[@rel='next'][1][not(@href='#')]",
+      "nextLink" : "descendant::a[@rel='next'][not(@href='#')]",
       "pageElement" : "//div[@class='article-contents']|//li[.//p[@class='txt-update']]",
       "url" : "^https://japan\\.zdnet\\.com/"
    },
