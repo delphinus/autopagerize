@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231029010211
+// @version     0.1.20231030010204
 // ==/UserScript==
 
 function autoPagerize() {
@@ -9210,10 +9210,10 @@ function autoPagerize() {
       "url" : "^http://digicame-info\\.com/\\d+"
    },
    {
-      "exampleUrl" : "https://screenrant.com/search/?q=masked%20singer&page=2",
+      "exampleUrl" : "https://screenrant.com/search/?q=masked%20singer&page=2\r\nhttps://gamerant.com/search/?q=rpg",
       "nextLink" : "//a[@class='next']",
       "pageElement" : "descendant::*[./article][1]/article",
-      "url" : "^https?://screenrant\\.com/.+"
+      "url" : "^https?://(screen|game)rant\\.com/.+"
    },
    {
       "exampleUrl" : "https://exelab.ru/f/index.php?action=vtopic&forum=1\r\nhttps://exelab.ru/f/?action=vthread&forum=1&topic=16824",
