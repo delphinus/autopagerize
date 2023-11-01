@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231030010204
+// @version     0.1.20231101124822
 // ==/UserScript==
 
 function autoPagerize() {
@@ -278,7 +278,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "https://news.yahoo.co.jp/articles/009828f57dc6e4b74f4be1505978e2544fcace52/comments",
       "nextLink" : "//a[contains(@href, 'page=') and text()='次へ']",
-      "pageElement" : "//div[contains(concat(' ', @class, ' '), ' viewableWrapper ')]/ul[li]",
+      "pageElement" : "id('comment-main')/ul[.//article]",
       "url" : "^https://news\\.yahoo\\.co\\.jp/articles/.+?/comments"
    },
    {
@@ -9212,7 +9212,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "https://screenrant.com/search/?q=masked%20singer&page=2\r\nhttps://gamerant.com/search/?q=rpg",
       "nextLink" : "//a[@class='next']",
-      "pageElement" : "descendant::*[./article][1]/article",
+      "pageElement" : "//div[@class='sentinel-search-latestArticles']",
       "url" : "^https?://(screen|game)rant\\.com/.+"
    },
    {
