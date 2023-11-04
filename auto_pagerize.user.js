@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231101124822
+// @version     0.1.20231104124702
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://type.jp/job-1/1001/?pathway=4",
+      "insertBefore" : "",
+      "nextLink" : "//link[@rel='next']",
+      "pageElement" : "//article[contains(concat(' ', @class, ' '), ' mod-job-index-item ')]",
+      "url" : "^https://type\\.jp/job-"
+   },
    {
       "exampleUrl" : "",
       "insertBefore" : "",
@@ -15454,9 +15461,9 @@ function autoPagerize() {
       "url" : "^https://(www\\.)?ali213\\.net/news/html/"
    },
    {
-      "exampleUrl" : "https://type.jp/et/feature/1047 https://type.jp/et/feature/posts",
+      "exampleUrl" : "https://type.jp/et/feature/1047 https://type.jp/et/feature/posts\r\nhttps://type.jp/et/feature/category/skill/",
       "nextLink" : "//link[@rel='next']",
-      "pageElement" : "id('category')//article[@class='card']|id('single_post')/header/following-sibling::*[./following-sibling::ol]",
+      "pageElement" : "id('category')/div[@class='cardArea']|id('single_post')/header/following-sibling::*[./following-sibling::ol]",
       "url" : "^https://type\\.jp/"
    },
    {
@@ -16862,10 +16869,10 @@ function autoPagerize() {
       "url" : "^https?://ejje\\.weblio\\.jp/sentence/content/"
    },
    {
-      "exampleUrl" : "https://www.atsoho.com/jobinfo/index/type-all.html",
-      "nextLink" : "id('center_contents')/div[contains(concat(' ', @class, ' '), ' table_sentence ')][last()]/text()[contains(.,'1') or contains(.,'2') or contains(.,'3') or contains(.,'4') or contains(.,'5') or contains(.,'6') or contains(.,'7') or contains(.,'8') or contains(.,'9')]/following-sibling::a[1]",
-      "pageElement" : "//table[@class='table']//tr[not(td/@bgcolor='#99CCFF')]",
-      "url" : "^https://(www\\.)?atsoho\\.com/(?:job|soho)info/index/type-"
+      "exampleUrl" : "https://atsoho.com/job/\r\nhttps://atsoho.com/work/category?type=all",
+      "nextLink" : "//strong/following-sibling::a[1][contains(@href, 'pg=')]",
+      "pageElement" : "//div[@class='et_pb_code_inner' or @class='et_pb_text_inner']/div[contains(concat(' ', @class, ' '), ' et_pb_section ')]",
+      "url" : "^https://atsoho\\.com/"
    },
    {
       "exampleUrl" : "https://pulsemusic.proboards.com/board/23 https://pulsemusic.proboards.com/thread/113474/weekly-digital-songs-sales-thread?page=1 https://mariopaintcomposer.proboards.com/board/7/general-mario-paint-discussion",
