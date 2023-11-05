@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231104124702
+// @version     0.1.20231105094321
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://netshop.impress.co.jp/taxonomy/term/2896\r\nhttps://netshop.impress.co.jp/search/site/AI",
+      "insertBefore" : "",
+      "nextLink" : "//li[contains(concat(' ', @class, ' '), ' next ')]/a",
+      "pageElement" : "//div[ul[@class='pagination']]/preceding-sibling::*[@class='view-content' or self::ol[contains(concat(' ', @class, ' '), ' search-results ')]]/*",
+      "url" : "^https://netshop\\.impress\\.co\\.jp/"
+   },
    {
       "exampleUrl" : "https://type.jp/job-1/1001/?pathway=4",
       "insertBefore" : "",
