@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231105094321
+// @version     0.1.20231108124905
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.weblio.jp/category/\r\nhttps://kobun.weblio.jp/category/aa\r\nhttps://www.weblio.jp/category/people/tltdb/ha/10",
+      "insertBefore" : "",
+      "nextLink" : "//span[@class='TargetPage']/following-sibling::a[1][number()>0]",
+      "pageElement" : "//div[@class='CtgryLink']|//div[@class='CtgryLink']/following-sibling::br[@class='clr'][1]",
+      "url" : "^https://[^/]+\\.weblio\\.jp/."
+   },
    {
       "exampleUrl" : "https://netshop.impress.co.jp/taxonomy/term/2896\r\nhttps://netshop.impress.co.jp/search/site/AI",
       "insertBefore" : "",
