@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231108124905
+// @version     0.1.20231109010220
 // ==/UserScript==
 
 function autoPagerize() {
@@ -23,10 +23,10 @@ function autoPagerize() {
     
     var SITEINFO = [
    {
+      "comment" : "If you do not specify the block element specified by CSS after the CtgryLink class in pageElement, the Design will be affected.",
       "exampleUrl" : "https://www.weblio.jp/category/\r\nhttps://kobun.weblio.jp/category/aa\r\nhttps://www.weblio.jp/category/people/tltdb/ha/10",
-      "insertBefore" : "",
       "nextLink" : "//span[@class='TargetPage']/following-sibling::a[1][number()>0]",
-      "pageElement" : "//div[@class='CtgryLink']|//div[@class='CtgryLink']/following-sibling::br[@class='clr'][1]",
+      "pageElement" : "//div[@class='CtgryLink']|//div[@class='CtgryLink']/following-sibling::*[1]",
       "url" : "^https://[^/]+\\.weblio\\.jp/."
    },
    {
