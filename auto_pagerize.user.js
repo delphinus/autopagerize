@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231109010220
+// @version     0.1.20231110125142
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22646,9 +22646,9 @@ function autoPagerize() {
       "url" : "^https://dic\\.nicovideo\\.jp/b/[aiuv]/"
    },
    {
-      "exampleUrl" : "http://dic.nicovideo.jp/m/u/a/",
+      "exampleUrl" : "https://dic.nicovideo.jp/m/u/a/\r\nhttps://dic.nicovideo.jp/s/oekaki/a/A/rev_created/desc/1-?query_type=a\r\nhttps://dic.nicovideo.jp/s/mml/a/A/rev_created/desc/1-?query_type=a\r\nhttps://dic.nicovideo.jp/s/al/t/A/rev_created/desc/1-?query_type=t",
       "nextLink" : "id(\"main\")//div[contains(@class,\"st-box_contents\")]//div[@class=\"st-pg_contents\"]/span[@class=\"current\"]/following-sibling::a",
-      "pageElement" : "id(\"main\")//div[contains(@class,\"st-box_contents\")]/table[@class=\"st-table\"]//tr[td]",
+      "pageElement" : "id(\"main\")//div[contains(@class,\"st-box_contents\")]/table[@class]//tr[td]|\r\n//dd[starts-with(@id, 'search_table_contents_')]",
       "url" : "^https://dic\\.nicovideo\\.jp/(?:m/[nu]|s)/(?:[aciluv]|all|al|oekaki|mml)/"
    },
    {
