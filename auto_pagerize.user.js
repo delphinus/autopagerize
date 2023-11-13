@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231110125142
+// @version     0.1.20231113154304
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,20 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://ananweb.jp/column/ikemendorama/498426/",
+      "insertBefore" : "",
+      "nextLink" : "//li[span[@aria-current='page']][number()>0]/following-sibling::li[1]/a",
+      "pageElement" : "id('the_content')/node()[not(@class='related-links')]",
+      "url" : "^https://ananweb\\.jp/."
+   },
+   {
+      "exampleUrl" : "https://ananweb.jp/\r\nhttps://ananweb.jp/tags/love/",
+      "insertBefore" : "",
+      "nextLink" : "//div[@class='nav-next']/a",
+      "pageElement" : "//a[contains(concat(' ', @class, ' '), ' hentry ')][not(ancestor::aside)]",
+      "url" : "^https://ananweb\\.jp/"
+   },
    {
       "comment" : "If you do not specify the block element specified by CSS after the CtgryLink class in pageElement, the Design will be affected.",
       "exampleUrl" : "https://www.weblio.jp/category/\r\nhttps://kobun.weblio.jp/category/aa\r\nhttps://www.weblio.jp/category/people/tltdb/ha/10",
