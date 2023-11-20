@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231113154304
+// @version     0.1.20231120124929
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "",
+      "insertBefore" : "",
+      "nextLink" : "//a[@rel='next']",
+      "pageElement" : "//div[contains(@class,'movie-list')]/div[@class='item']",
+      "url" : "^https://javdb\\.com/"
+   },
    {
       "exampleUrl" : "https://ananweb.jp/column/ikemendorama/498426/",
       "insertBefore" : "",
