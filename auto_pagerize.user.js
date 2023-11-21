@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231120124929
+// @version     0.1.20231121064329
 // ==/UserScript==
 
 function autoPagerize() {
@@ -7289,12 +7289,6 @@ function autoPagerize() {
       "nextLink" : "//li[contains(@class,\"next\")]/a",
       "pageElement" : "//div[@class=\"row-fluid item-li\"]",
       "url" : "^http://moridb\\.com/items/"
-   },
-   {
-      "exampleUrl" : "https://slickdeals.net/?page=2 https://slickdeals.net/f/10525332-far-acronis-true-image-2017-1-device-free-after-35-rebate-5-newegg-promo-card",
-      "nextLink" : "//a[@class='button'][.='Next']|//a[contains(@class, 'icon-arrow-right2')][1]|//a[@class='search_pagenav search_pagenav_text'  and contains(text(),'Next')][1]",
-      "pageElement" : "//div[@id='fpMainContent']/div[@class='gridCategory removeHidden']|//div[@class='post clearfix']|//div[@id='comment_list']",
-      "url" : "^https?://(?:[^.] \\.)?slickdeals\\.net/"
    },
    {
       "exampleUrl" : "http://businessnetwork.jp/Detail/tabid/65/artid/5619/Default.aspx http://businessnetwork.jp/Default.aspx?tabid=79 http://businessnetwork.jp/next/tabid/57/attrid/34/Default.aspx",
@@ -20292,13 +20286,11 @@ function autoPagerize() {
       "url" : "^https://(?:www\\.)?boingboing\\.net/"
    },
    {
-      "Stylish" : "@-moz-document domain(\"slickdeals.net\") {\r\n  .autopagerize_page_separator~.gridCategory .gridHeading{display:none !important;}\r\n}",
-      "bookmarklet" : "Array.prototype.forEach.call(document.querySelectorAll('img'), function(img) { var lazySrc = img.hasAttribute('data-src') ? img.getAttribute('data-src') : img.getAttribute('data-original'); if (lazySrc) { img.src = lazySrc;} });",
-      "comment" : "Check your expression before deleting others' one, or at least leave a comment saying why did you delete it. I've corrected it, btw.\r\nUncaught DOMException: Failed to execute '$x' on 'CommandLineAPI': The string '//div[@class='dealRow' or @class='postReplyContainer']|id('deals')/div[.//@class='itemBottomRow']|' is not a valid XPath expression.\r\n",
-      "exampleUrl" : "https://slickdeals.net/deals/ https://slickdeals.net/deals/games/ https://slickdeals.net/f/9374587-samsung-saturday-is-on-sams-club-cctv-security-system-199-00\r\n",
-      "nextLink" : "//a[@class='button' and .='Next' or contains(@class,'icon-arrow-right2')]",
-      "pageElement" : "//div[@class='dealRow' or @class='postReplyContainer']|id('deals')/div[contains(@class,'fpGridBox grid')]",
-      "url" : "^https?://(?:[^.]+\\.)?slickdeals\\.net/"
+      "comment" : "2023 Update: This item now works for all parts of the Slickdeals website, including the Front Page, Deal Pages, Search, and Comments. Note that this item hasn't been updated in nearly 7 years and was no longer working, so the \"bookmarklet\" and \"Stylish\" keys were removed as a precaution (they can be re-added with their new correct values if needed).",
+      "exampleUrl" : "https://slickdeals.net/\r\nhttps://slickdeals.net/deals/home/\r\nhttps://slickdeals.net/newsearch.php?q=infinity\r\nhttps://slickdeals.net/f/17077657-pokemon-trading-card-game-scarlet-violet-151-ultra-premium-collection-96-free-shipping",
+      "nextLink" : "//div[@class='paginationPages']/span/following-sibling::a |\r\n//div[contains(@class,'slickdealsPagination')]/span[@class='slickdealsPagination__pageNumber']/following-sibling::a |\r\n//div[contains(@class,'pagination')]/a[last()]",
+      "pageElement" : "//div[@data-module-name]/div[@class='dealRow'] |\r\n//div[@data-module-name]/div[@class='resultRow'] |\r\n//ul[contains(@class,'frontpageGrid')] |\r\n//ul[@class='categoryPageDealGrid'] |\r\n//section[@class='commentsSection']/div[@class='commentsSectionComment']",
+      "url" : "^https://(?:[^.]+\\.)?slickdeals\\.net/"
    },
    {
       "exampleUrl" : "https://www.askul.co.jp/m/01-0112-0112002/?categoryM=0112002&categoryL=0112&categoryLl=01&mkrCategoryM=&deliveryEstimate=0&minPriceRange=&maxPriceRange=&sortDir=0&resultCount=20&resultType=0&variation=0&priceRangeInputFlg=0&exclusionFlg=0&categoryS=",
