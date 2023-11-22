@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231121064329
+// @version     0.1.20231122064323
 // ==/UserScript==
 
 function autoPagerize() {
@@ -20288,7 +20288,7 @@ function autoPagerize() {
    {
       "comment" : "2023 Update: This item now works for all parts of the Slickdeals website, including the Front Page, Deal Pages, Search, and Comments. Note that this item hasn't been updated in nearly 7 years and was no longer working, so the \"bookmarklet\" and \"Stylish\" keys were removed as a precaution (they can be re-added with their new correct values if needed).",
       "exampleUrl" : "https://slickdeals.net/\r\nhttps://slickdeals.net/deals/home/\r\nhttps://slickdeals.net/newsearch.php?q=infinity\r\nhttps://slickdeals.net/f/17077657-pokemon-trading-card-game-scarlet-violet-151-ultra-premium-collection-96-free-shipping",
-      "nextLink" : "//div[@class='paginationPages']/span/following-sibling::a |\r\n//div[contains(@class,'slickdealsPagination')]/span[@class='slickdealsPagination__pageNumber']/following-sibling::a |\r\n//div[contains(@class,'pagination')]/a[last()]",
+      "nextLink" : "//div[contains(@class,'pagination')]/a[contains(.,'Next')] |\r\n//div[@class='paginationPages']/span/following-sibling::a |\r\n//div[contains(@class,'slickdealsPagination')]/span[@class='slickdealsPagination__pageNumber']/following-sibling::a",
       "pageElement" : "//div[@data-module-name]/div[@class='dealRow'] |\r\n//div[@data-module-name]/div[@class='resultRow'] |\r\n//ul[contains(@class,'frontpageGrid')] |\r\n//ul[@class='categoryPageDealGrid'] |\r\n//section[@class='commentsSection']/div[@class='commentsSectionComment']",
       "url" : "^https://(?:[^.]+\\.)?slickdeals\\.net/"
    },
