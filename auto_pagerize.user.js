@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231124124826
+// @version     0.1.20231126154437
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://cancam.jp/archives/1162153",
+      "insertBefore" : "",
+      "nextLink" : "//li[contains(concat(' ', @class, ' '), ' next ')]/a",
+      "pageElement" : "//section[contains(concat(' ', @class, ' '), ' entry-content ')]",
+      "url" : "^https://cancam\\.jp/archives/."
+   },
    {
       "exampleUrl" : "https://netmall.hardoff.co.jp/cate/00010012/?q=%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3",
       "insertBefore" : "",
@@ -5292,9 +5299,8 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://cancam.jp/archives/577651",
-      "insertBefore" : "",
       "nextLink" : "//a[@rel=\"prev\"]",
-      "pageElement" : "id(\"primary\")",
+      "pageElement" : "id(\"primary\")/*",
       "url" : "^https://cancam\\.jp/archives/"
    },
    {
