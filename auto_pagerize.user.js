@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231126154437
+// @version     0.1.20231130214312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -10602,7 +10602,7 @@ function autoPagerize() {
       "exampleUrl" : "http://www.webdoku.jp/rensai/sakka/michi155_tsumura/20141217_3.html http://www.webdoku.jp/rensai/sakka/michi84.html http://www.webdoku.jp/rensai/sakka/michi68.html http://www.webdoku.jp/rensai/sakka/michi31.html",
       "nextLink" : "//p[contains(@class,\"contentNavi\")]/a[1]",
       "pageElement" : "//div[@class=\"entry-content\"]|id(\"sakka\")|id(\"sakka-header\")[.//p[contains(@class,\"date\")]]",
-      "url" : "^http://www\\.webdoku\\.jp/rensai/sakka/michi"
+      "url" : "^https://www\\.webdoku\\.jp/rensai/sakka/michi"
    },
    {
       "exampleUrl" : "http://sweetdream.asks.jp/ http://sweetdream.asks.jp/?skip=20 http://sweetdream.asks.jp/calendar http://mm.asks.jp/",
