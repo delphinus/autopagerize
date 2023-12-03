@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231130214312
+// @version     0.1.20231203094336
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://toyotatimes.jp/spotlights/1033.html",
+      "insertBefore" : "",
+      "nextLink" : "//span[number()>0]/following-sibling::a[1][number()>0]",
+      "pageElement" : "id('pagingNavi')/preceding-sibling::*",
+      "url" : "^https://toyotatimes\\.jp/"
+   },
    {
       "exampleUrl" : "https://cancam.jp/archives/1162153",
       "insertBefore" : "",
