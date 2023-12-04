@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231203094336
+// @version     0.1.20231204154319
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "http://av-photograph.com/\r\nhttp://av-photograph.com/blog-category-253.html",
+      "insertBefore" : "",
+      "nextLink" : "//link[@rel='next']",
+      "pageElement" : "id('post-list post4-list')[1]",
+      "url" : "^https?://av-photograph\\.com/"
+   },
    {
       "exampleUrl" : "https://toyotatimes.jp/spotlights/1033.html",
       "insertBefore" : "",
@@ -1915,9 +1922,8 @@ function autoPagerize() {
       "url" : "^https://www\\.appinn\\.com/"
    },
    {
-      "exampleUrl" : "https://hollywoodlife.com/",
-      "insertBefore" : "",
-      "nextLink" : "//link[@rel='next']",
+      "exampleUrl" : "https://hollywoodlife.com/\r\nhttps://hollywoodlife.com/?s=test",
+      "nextLink" : "//span[contains(@class, 'current')][number()>0]/following-sibling::span[1][number()>0]/a",
       "pageElement" : "//article[@data-post-id]",
       "url" : "^https://hollywoodlife\\.com/"
    },
