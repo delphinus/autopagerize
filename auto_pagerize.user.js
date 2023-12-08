@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231204154319
+// @version     0.1.20231208184144
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.dmm.co.jp/mono/figure/-/special/=/id=156/page=2/ https://www.dmm.com/mono/dvd/-/special/=/id=166/",
+      "insertBefore" : "",
+      "nextLink" : "//link[@rel='next']",
+      "pageElement" : "//ul[@class='boxContentList']/li",
+      "url" : "^https://www\\.dmm\\.co(?:m|\\.jp)/mono/[^/]+/-/special/"
+   },
    {
       "exampleUrl" : "http://av-photograph.com/\r\nhttp://av-photograph.com/blog-category-253.html",
       "insertBefore" : "",
