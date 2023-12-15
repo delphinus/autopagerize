@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231208184144
+// @version     0.1.20231215154322
 // ==/UserScript==
 
 function autoPagerize() {
@@ -2234,9 +2234,9 @@ function autoPagerize() {
       "url" : "^https://i-voce\\.jp/feed/"
    },
    {
-      "exampleUrl" : "https://bestcarweb.jp/news/296665\r\nhttps://bestcarweb.jp/feature/column/357128\r\nhttps://bestcarweb.jp/news/261798?prd=4\r\nhttps://bestcarweb.jp/latest\r\nhttps://bestcarweb.jp/newcar",
+      "exampleUrl" : "https://bestcarweb.jp/news/296665\r\nhttps://bestcarweb.jp/feature/column/357128\r\nhttps://bestcarweb.jp/feature/column/357128?prd=4\r\nhttps://bestcarweb.jp/news/261798?prd=4\r\nhttps://bestcarweb.jp/latest\r\nhttps://bestcarweb.jp/newcar",
       "nextLink" : "//li[@class=\"next\"]/a|//div[@data-max-page]/following-sibling::div[1]/a",
-      "pageElement" : "//div[@class=\"post\"][not(//div[@class=\"article__content\"])]|//div[@class=\"article__content\"]/p[last()]/preceding-sibling::*",
+      "pageElement" : "//div[@class=\"post\"][not(//div[@class=\"article__content\"])]|//div[@class=\"article__content\"]/*[not(contains(@class, '_CLS_'))]",
       "url" : "^https://bestcarweb\\.jp/"
    },
    {
