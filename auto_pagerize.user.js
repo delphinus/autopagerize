@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231219154321
+// @version     0.1.20231220094316
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,12 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://comics888.com/",
+      "nextLink" : "(//div[@class='pagebar'])[1]/a[last()-1]",
+      "pageElement" : "//div[@id='divMain']",
+      "url" : "^https://comics888\\.com/"
+   },
    {
       "exampleUrl" : "https://www.dmm.co.jp/mono/figure/-/special/=/id=156/page=2/ https://www.dmm.com/mono/dvd/-/special/=/id=166/",
       "insertBefore" : "",
