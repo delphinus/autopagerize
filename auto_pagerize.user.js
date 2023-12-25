@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231220094316
+// @version     0.1.20231225214354
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "",
+      "insertBefore" : "",
+      "nextLink" : "id('wishlist')/table[contains(concat(' ', @class, ' '), ' global_pagination ')]//a[.='次へ']",
+      "pageElement" : "id('wishlist')//table[contains(concat(' ', @class, ' '), ' n_worklist ')]/tbody/*",
+      "url" : "https://www.dlsite.com/*/mypage/wishlist"
+   },
    {
       "exampleUrl" : "https://comics888.com/",
       "nextLink" : "(//div[@class='pagebar'])[1]/a[last()-1]",
