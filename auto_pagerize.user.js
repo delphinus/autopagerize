@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20231225214354
+// @version     0.1.20231231214320
 // ==/UserScript==
 
 function autoPagerize() {
@@ -14964,9 +14964,9 @@ function autoPagerize() {
       "url" : "^http://www7b\\.biglobe\\.ne\\.jp/\\~nipponsyokudou/"
    },
    {
-      "exampleUrl" : "http://mangalifewin.takeshobo.co.jp/rensai/halfde_ittoko/item-1/001/\r\nhttp://mangalifewin.takeshobo.co.jp/rensai/halfde_ittoko/item-3/033/",
+      "exampleUrl" : "https://mangalifewin.takeshobo.co.jp/rensai/slanleat/slanleat-001/25887/\r\nhttp://mangalifewin.takeshobo.co.jp/rensai/halfde_ittoko/item-1/001/\r\nhttp://mangalifewin.takeshobo.co.jp/rensai/halfde_ittoko/item-3/033/",
       "nextLink" : "//a[@class='btnNext']\r\n",
-      "pageElement" : "//div[@class='img']",
+      "pageElement" : "//div[@class='img']|//div[@class='hsNormal']",
       "url" : "^https?://mangalifewin\\.takeshobo\\.co\\.jp/"
    },
    {
