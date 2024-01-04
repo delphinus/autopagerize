@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240101094302
+// @version     0.1.20240104094324
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://search.shinchosha.co.jp/search?site=ZXE8UIDC&design=sitesearch&group=sitesearch&charset=UTF-8&query=%E3%83%AD%E3%83%B3%E3%83%89%E3%83%B3#result-list",
+      "insertBefore" : "",
+      "nextLink" : "//span[@class=\"mod-pager__next\"]/a",
+      "pageElement" : "//div[@class=\"l-section\"]/a",
+      "url" : "^https://search\\.shinchosha\\.co\\.jp/search"
+   },
    {
       "exampleUrl" : "",
       "insertBefore" : "",
