@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240104094324
+// @version     0.1.20240108154319
 // ==/UserScript==
 
 function autoPagerize() {
@@ -12767,9 +12767,9 @@ function autoPagerize() {
       "url" : "^https://woman\\.excite\\.co\\.jp/"
    },
    {
-      "exampleUrl" : "http://allabout.co.jp/gm/gp/714/library/\r\nhttp://allabout.co.jp/gm/gc/462037/\r\nhttp://allabout.co.jp/gm/gc/13353/\r\nhttp://allabout.co.jp/gm/gl/421/\r\nhttp://allabout.co.jp/recipe/search/material/10/",
+      "exampleUrl" : "https://allabout.co.jp/gm/gp/714/library/\r\nhttps://allabout.co.jp/gm/gc/462037/\r\nhttps://allabout.co.jp/gm/gc/13353/\r\nhttps://allabout.co.jp/gm/gl/421/\r\nhttps://allabout.co.jp/recipe/search/material/10/",
       "nextLink" : "//a[(text()=\"次のページへ\")]",
-      "pageElement" : "//div[@class=\"article-list\"]//li|id(\"popin_read\")|//main[@class=\"aa_main\"]//ul[@class=\"aa_media-list\"]/li",
+      "pageElement" : "//div[@class=\"article-list\"]//li|//div[@class='aa_article-content']|//main[@class=\"aa_main\"]//ul[@class=\"aa_media-list\"]/li",
       "url" : "^https://allabout\\.co\\.jp/gm/(gc|gp|gl)|^https://allabout\\.co\\.jp/recipe"
    },
    {
