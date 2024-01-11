@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240108154319
+// @version     0.1.20240111094307
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.h-up.com/e/index.php?Series=S01&flg_searchmode=shousai&ORDERBY=DateShuppan&ORDERBY2=DateShotenhatsubai&SORTORDER=DESC&action_search_do=true&page=8",
+      "insertBefore" : "",
+      "nextLink" : "id('pager')/a[@title='next page']",
+      "pageElement" : "id('ichiran-first')/div[@class='booklist']",
+      "url" : "^https://www\\.h-up\\.com/e/index\\.php"
+   },
    {
       "exampleUrl" : "https://search.shinchosha.co.jp/search?site=ZXE8UIDC&design=sitesearch&group=sitesearch&charset=UTF-8&query=%E3%83%AD%E3%83%B3%E3%83%89%E3%83%B3#result-list",
       "insertBefore" : "",
