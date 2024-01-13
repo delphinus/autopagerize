@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240111094307
+// @version     0.1.20240113094306
 // ==/UserScript==
 
 function autoPagerize() {
@@ -16961,7 +16961,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "http://ejje.weblio.jp/sentence/content/%E6%84%9F%E3%81%98%E3%82%8B",
       "nextLink" : "//span[@class='TargetPage']/following-sibling::a[1]",
-      "pageElement" : "id('main')//div[contains(concat(' ', @class, ' '), ' kiji ')]/div[contains(concat(' ', @class, ' '), ' qotC ')]",
+      "pageElement" : "id('main')//div[contains(concat(' ', @class, ' '), ' mainBlock ')][.//div[contains(concat(' ', @class, ' '), ' qotC ')]]",
       "url" : "^https?://ejje\\.weblio\\.jp/sentence/content/"
    },
    {
