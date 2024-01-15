@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240113094306
+// @version     0.1.20240115094311
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.megahobby.jp/products/lookup/9/?sort=new",
+      "insertBefore" : "",
+      "nextLink" : "//div[@class='page_nav']/ul/li[@class='active']/following-sibling::a",
+      "pageElement" : "id('category_list')/ul/li",
+      "url" : "^https://www\\.megahobby\\.jp/products/"
+   },
    {
       "exampleUrl" : "https://www.h-up.com/e/index.php?Series=S01&flg_searchmode=shousai&ORDERBY=DateShuppan&ORDERBY2=DateShotenhatsubai&SORTORDER=DESC&action_search_do=true&page=8",
       "insertBefore" : "",
