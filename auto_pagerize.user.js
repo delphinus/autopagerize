@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240123034325
+// @version     0.1.20240123064314
 // ==/UserScript==
 
 function autoPagerize() {
@@ -23,11 +23,10 @@ function autoPagerize() {
     
     var SITEINFO = [
    {
-      "exampleUrl" : "https://minkara.carview.co.jp/search/?q=f-zero&c=0",
-      "insertBefore" : "",
-      "nextLink" : "//a[contains(@id,'Pager_lnkNext')]",
-      "pageElement" : "//ul[contains(@class,'common-article-list')]",
-      "url" : "^https:\\/\\/minkara.carview.co.jp\\/search"
+      "exampleUrl" : "https://minkara.carview.co.jp/search/?q=f-zero&c=0\r\nhttps://minkara.carview.co.jp/blog/\r\nhttps://minkara.carview.co.jp/review/",
+      "nextLink" : "//a[contains(@id,'lnkNext')]",
+      "pageElement" : "//ul[contains(@class,'-list')]",
+      "url" : "^https:\\/\\/minkara.carview.co.jp\\/"
    },
    {
       "exampleUrl" : "https://www.megahobby.jp/products/lookup/9/?sort=new",
