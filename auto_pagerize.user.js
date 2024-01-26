@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240123064314
+// @version     0.1.20240126154331
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://ncode.syosetu.com/n8799hu/\r\nhttps://novel18.syosetu.com/n6382hq/",
+      "insertBefore" : "",
+      "nextLink" : "//a[@class='novelview_pager-next']",
+      "pageElement" : "//div[@class='index_box']/*",
+      "url" : "^https://(?:ncode|novel18)\\.syosetu\\.com/n[^/]+/"
+   },
    {
       "exampleUrl" : "https://minkara.carview.co.jp/search/?q=f-zero&c=0\r\nhttps://minkara.carview.co.jp/blog/\r\nhttps://minkara.carview.co.jp/review/",
       "nextLink" : "//a[contains(@id,'lnkNext')]",
