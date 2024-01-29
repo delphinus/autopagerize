@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240126154331
+// @version     0.1.20240129064322
 // ==/UserScript==
 
 function autoPagerize() {
@@ -384,7 +384,7 @@ function autoPagerize() {
    },
    {
       "nextLink" : "(//a[@rel='next'])[1]",
-      "pageElement" : "id('main')//div[@class='panel-body']//div[contains(@class,'row-eq-height')]/div",
+      "pageElement" : "id('main')//div[@class='panel-body']//div[contains(@class,'row-eq-height')]",
       "url" : "^https://fantia\\.jp/fanclubs/\\d+/posts\r\n"
    },
    {
