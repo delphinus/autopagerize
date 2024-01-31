@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240129064322
+// @version     0.1.20240131124656
 // ==/UserScript==
 
 function autoPagerize() {
@@ -5152,9 +5152,9 @@ function autoPagerize() {
       "url" : "^https://alienwarezone\\.jp/latest\\?page\\="
    },
    {
-      "exampleUrl" : "https://business.nikkei.com/atcl/seminar/19/00030/032200460/\r\nhttps://business.nikkei.com/atcl/gen/19/00533/030600006/\r\nhttps://business.nikkei.com/atcl/gen/19/00297/041900122/",
-      "nextLink" : "//li[contains(@class, \"p-pagination_list_item\") and contains(@class, \"-next\")]/a[@aria-label=\"次のページへリンク\"]",
-      "pageElement" : "//div[contains(@class, 'articleBody')]/nav/preceding-sibling::*[not(./following-sibling::*[1][self::nav])]",
+      "exampleUrl" : "https://business.nikkei.com/atcl/seminar/19/00030/032200460/\r\nhttps://business.nikkei.com/atcl/gen/19/00533/030600006/\r\nhttps://business.nikkei.com/atcl/gen/19/00297/041900122/\r\nhttps://business.nikkei.com/atcl/gen/19/00562/012900029/",
+      "nextLink" : "//li[contains(concat(' ',@class,' '), ' -next ')]/a[@aria-label=\"次のページへリンク\"]",
+      "pageElement" : "//div[contains(concat(' ',@class,' '), ' articleBody ')]/node()[self::nav or contains(.,'.p-article_watchBox')]/preceding-sibling::*",
       "url" : "^https://business\\.nikkei\\.com/"
    },
    {
