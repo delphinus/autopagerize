@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240131124656
+// @version     0.1.20240204034314
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22204,10 +22204,10 @@ function autoPagerize() {
       "url" : "^https?://gist\\.github\\.com/"
    },
    {
-      "exampleUrl" : "https://ramendb.supleks.jp/search\r\nhttps://supleks.jp/search?q=カレー",
+      "exampleUrl" : "https://ramendb.supleks.jp/search\r\nhttps://supleks.jp/search?q=カレー\r\nhttps://tokyo-ramendb.supleks.jp/search?state=tokyo",
       "nextLink" : "//a[@class='next']",
       "pageElement" : "id('searched')/li|//table[@class='rank']/tbody/tr",
-      "url" : "^https://(?:\\w+db\\.)?supleks\\.jp/search"
+      "url" : "^https://(?:[^/]+db\\.)?supleks\\.jp/search"
    },
    {
       "exampleUrl" : "https://movies.yahoo.co.jp/movie/327529/review/",
