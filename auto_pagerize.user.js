@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240204034314
+// @version     0.1.20240205214325
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://kyotolove.kyoto/I0000332/",
+      "insertBefore" : "",
+      "nextLink" : "//ul[contains(concat(' ',@class,' '),' pagenav ')]/li[a/@class='active']/following-sibling::li/a",
+      "pageElement" : "id('article')/div[@id]",
+      "url" : "^https://kyotolove\\.kyoto/"
+   },
    {
       "exampleUrl" : "https://ncode.syosetu.com/n8799hu/\r\nhttps://novel18.syosetu.com/n6382hq/",
       "insertBefore" : "",
