@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240205214325
+// @version     0.1.20240208124641
 // ==/UserScript==
 
 function autoPagerize() {
@@ -12007,10 +12007,10 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?latinospost\\.com/"
    },
    {
-      "exampleUrl" : "https://bizgate.nikkei.co.jp/article/DGXMZO5957527026052020000000?channel=DF050420183723",
-      "nextLink" : "//link[@rel=\"next\"]",
-      "pageElement" : "//div[@itemprop='articleBody']/p[last()]|//div[@itemprop='articleBody']/p[last()]/preceding-sibling::*",
-      "url" : "https://bizgate\\.nikkei\\.co\\.jp/article/.+"
+      "exampleUrl" : "https://bizgate.nikkei.com/article/DGXMZO5957527026052020000000?channel=DF050420183723\r\nhttps://bizgate.nikkei.com/article/DGXZQOLM2752S027112023000000?page=3",
+      "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a",
+      "pageElement" : "//ul[contains(concat(' ', @class, ' '), ' pagination-article ')]/preceding-sibling::*",
+      "url" : "^https://bizgate\\.nikkei\\.com/article/.+"
    },
    {
       "exampleUrl" : "https://www.gocomics.com/jumpstart/2010/01/01 https://www.gocomics.com/blog https://www.gocomics.com/blog?page=2",
