@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240208124641
+// @version     0.1.20240224124539
 // ==/UserScript==
 
 function autoPagerize() {
@@ -23623,9 +23623,9 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?amazon\\.(?:c(?:a|n|o(?:m|\\.(?:jp|uk)))|de|fr)/(?:[^/]+/)?(?:[bes]|(?:gp|exec/obidos)/(search|aag)|entity/author)?"
    },
    {
-      "exampleUrl" : "https://allabout.co.jp/gm/latest/1732/",
+      "exampleUrl" : "https://allabout.co.jp/gm/latest/1732/\r\nhttps://allabout.co.jp/r_hobby/latest/",
       "nextLink" : "//a[.='次のページへ']",
-      "pageElement" : "id('popin_read')/div/ul/*",
+      "pageElement" : "//main/section[contains(@data-tracking-zone, 'mainContents')]|\r\n//ul[contains(concat(' ', @class, ' '), ' aa_media-list ')]",
       "url" : "^https?://allabout\\.co\\.jp/"
    },
    {
