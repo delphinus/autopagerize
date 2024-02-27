@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240224124539
+// @version     0.1.20240227124630
 // ==/UserScript==
 
 function autoPagerize() {
@@ -11757,7 +11757,7 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://dot.asahi.com/wa/2022080300076.html?page=1\r\nhttps://dot.asahi.com/dot/photoarticle/2019060500079.html?page=1\r\nhttps://dot.asahi.com/articles/-/196996?page=1",
-      "nextLink" : "//div[contains(concat(' ',@class,' '),' m-pagination ')]/a[@class='is-active']/following-sibling::a",
+      "nextLink" : "//div[contains(concat(' ',@class,' '),' m-pagination ')]/*[@class='is-active']/following-sibling::a",
       "pageElement" : "//div[@class='l-article']/div[@class='article-body']",
       "url" : "^https?://dot\\.asahi\\.com/"
    },
