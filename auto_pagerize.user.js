@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240227124630
+// @version     0.1.20240303124547
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://monomax.jp/archives/213091/3/\r\nhttps://monomax.jp/archives/213091/4/",
+      "insertBefore" : "",
+      "nextLink" : "//p[@class='next-page-link']/a",
+      "pageElement" : "//div[@class='pagesprit01']/preceding-sibling::*|id('writer01')",
+      "url" : "^https://monomax\\.jp/archives/\\d+"
+   },
    {
       "exampleUrl" : "https://kyotolove.kyoto/I0000332/",
       "insertBefore" : "",
