@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240303124547
+// @version     0.1.20240307064308
 // ==/UserScript==
 
 function autoPagerize() {
@@ -21960,10 +21960,10 @@ function autoPagerize() {
       "url" : "^https?://www\\.vector\\.co\\.jp/vpack/."
    },
    {
-      "exampleUrl" : "https://www.amazon.co.jp/gp/css/history/view.html?ie=UTF8&startAtIndex=0&orderFilter=year-2007&groupID=0",
-      "nextLink" : "id(\"cs-orders\")/div/div/div/a[.=\"次へ »\"]",
-      "pageElement" : "id(\"cs-orders\")/div[@class=\"action-box rounded\"]",
-      "url" : "^https://www\\.amazon\\.co\\.jp/gp/css/history(?:/orders)?/view\\.html"
+      "exampleUrl" : "https://www.amazon.co.jp/gp/css/order-history?ref_=nav_orders_first\r\nhttps://www.amazon.co.jp/your-orders/orders?timeFilter=year-2024&ref_=ppx_yo2ov_dt_b_filter_all_y2024",
+      "nextLink" : "//a[text()='次へ']",
+      "pageElement" : "//div[@class='order-card js-order-card']",
+      "url" : "^https?://www\\.amazon\\.co\\.jp/(gp/css/order-history||your-orders/)"
    },
    {
       "nextLink" : "id(\"revisionPagerSection\")/a[contains(text(), \"前のリビジョン\")]",
