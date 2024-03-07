@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240307064308
+// @version     0.1.20240307154310
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.amazon.co.jp/gp/css/gc/balance?ref_=ya_d_c_gc",
+      "insertBefore" : "",
+      "nextLink" : "//a[text()='次へ']",
+      "pageElement" : "//table[contains(@class, 'a-bordered')]/tbody/tr",
+      "url" : "^https?://www\\.amazon\\.co\\.jp/gp/css/gc/balance"
+   },
    {
       "exampleUrl" : "https://monomax.jp/archives/213091/3/\r\nhttps://monomax.jp/archives/213091/4/",
       "insertBefore" : "",
