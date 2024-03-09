@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240307154310
+// @version     0.1.20240309064300
 // ==/UserScript==
 
 function autoPagerize() {
@@ -8958,9 +8958,9 @@ function autoPagerize() {
       "url" : "^https?://concreterevolutio\\.com/.+"
    },
    {
-      "exampleUrl" : "https://www.macrumors.com/mac/",
+      "exampleUrl" : "https://www.macrumors.com/\r\nhttps://www.macrumors.com/mac/",
       "nextLink" : "//a[@rel='next']",
-      "pageElement" : "//div[@class='block--2_RlJqhg']",
+      "pageElement" : "id('maincontent')/*[not(contains(@class, 'pagination'))]",
       "url" : "^https?://(www\\.)?macrumors\\.com/"
    },
    {
