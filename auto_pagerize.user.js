@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240309064300
+// @version     0.1.20240309124530
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://themeplaza.art/themes",
+      "insertBefore" : "",
+      "nextLink" : "/html/body/div/div[3]/div/a[3]",
+      "pageElement" : "//div[@class=\"theme-grid row justify-content-center\"]",
+      "url" : "https://themeplaza.art/"
+   },
    {
       "exampleUrl" : "https://www.amazon.co.jp/gp/css/gc/balance?ref_=ya_d_c_gc",
       "insertBefore" : "",
