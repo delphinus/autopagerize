@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240309184328
+// @version     0.1.20240311124702
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,20 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://blog.domesoccer.jp/",
+      "insertBefore" : "",
+      "nextLink" : "//div[contains(concat(' ', @class, ' '), ' pagination ')]/span[contains(@class, 'current')][number()>0]/following-sibling::a[1]",
+      "pageElement" : "//section[contains(concat(' ', @class, ' '), ' main-post-list ')]/ul",
+      "url" : "^https://blog\\.domesoccer\\.jp/"
+   },
+   {
+      "exampleUrl" : "https://worldfn.net/\r\nhttps://worldfn.net/search/%E6%97%A5%E6%9C%AC?p=2",
+      "insertBefore" : "",
+      "nextLink" : "//a[@rel='next']",
+      "pageElement" : "//div[contains(concat(' ', @class, ' '), ' hentry ')]",
+      "url" : "^https://worldfn\\.net/"
+   },
    {
       "exampleUrl" : "https://themeplaza.art/themes",
       "nextLink" : "//a[@data-toggle='page-jump']/following-sibling::a[1]",
