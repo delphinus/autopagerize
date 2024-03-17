@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240311124702
+// @version     0.1.20240317154312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -3522,8 +3522,8 @@ function autoPagerize() {
       "url" : "^https?://mi-mollet\\.com/"
    },
    {
-      "exampleUrl" : "https://mon-ja.net/articles/page/2/ https://mon-ja.net/200523-01_bicycle-insurance-mandatory/",
-      "nextLink" : "//span[@class='current']/following-sibling::a[1]|//link[@rel='prev']",
+      "exampleUrl" : "https://mon-ja.net/articles/page/2/ https://mon-ja.net/tag/nisa/page/2/ https://mon-ja.net/200523-01_bicycle-insurance-mandatory/",
+      "nextLink" : "//span[@class='current']/following-sibling::a[1]|//a[@rel='prev']",
       "pageElement" : "//article[contains(@class, 'hentry')]",
       "url" : "^https://mon-ja\\.net/.+"
    },
