@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240317154312
+// @version     0.1.20240320094308
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,12 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://jp.daisonet.com/collections/electricity",
+      "nextLink" : "//a[@rel='next']",
+      "pageElement" : "//div[@class='product-list product-list--collection product-list--with-sidebar']",
+      "url" : "^https://jp\\.daisonet\\.com/"
+   },
    {
       "exampleUrl" : "https://blog.domesoccer.jp/",
       "insertBefore" : "",
