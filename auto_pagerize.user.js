@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240320094308
+// @version     0.1.20240322214302
 // ==/UserScript==
 
 function autoPagerize() {
@@ -11111,9 +11111,9 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?lovelive-anime\\.jp/"
    },
    {
-      "exampleUrl" : "http://mypage.syosetu.com/mypageblog/list/userid/227614/\r\nhttp://mypage.syosetu.com/mypageblog/list/userid/76491/\r\nhttp://mypage.syosetu.com/mypageblog/view/userid/227614/blogkey/894986/\r\nhttp://mypage.syosetu.com/mypageblog/view/userid/76491/blogkey/145793/index.php?p=1\r\nhttp://mypage.syosetu.com/mypageblog/view/userid/76491/blogkey/145793/index.php?p=2\r\nhttp://mypage.syosetu.com/mypagefavnovelmain/list/userid/88780/\r\nhttp://mypage.syosetu.com/mypagefavuser/list/userid/88780/\r\nhttp://mypage.syosetu.com/mypagenovelhyoka/list/userid/88780/\r\nhttp://mypage.syosetu.com/mypage/reviewlist/userid/88780/\r\nhttp://xmypage.syosetu.com/mypageblog/list/xid/44910/\r\nhttp://xmypage.syosetu.com/mypageblog/view/xid/24986/blogkey/144187/",
-      "nextLink" : "//a[@title='next page' or ../@class='blogcomment_r']|(id('my_blog_l')|//div[@class='my_blog_l'])/a[not(//a[../@class='blogcomment_r'])]",
-      "pageElement" : "id('bloglistbg bloglist')/div|(id('blogbg')|id('main')/div[@id='blogview']|id('blog_comment')/h3)[not(id('blog_comment')//div[@class='blogcomment_l']/a)]|//div[@class='comment_view']|id('novellist novelpointlist novelreviewlist')/ul|id('favuser')//li",
+      "exampleUrl" : "http://mypage.syosetu.com/mypageblog/list/userid/227614/\r\nhttp://mypage.syosetu.com/mypageblog/list/userid/76491/\r\nhttp://mypage.syosetu.com/mypageblog/view/userid/227614/blogkey/894986/\r\nhttp://mypage.syosetu.com/mypageblog/view/userid/76491/blogkey/145793/index.php?p=1\r\nhttp://mypage.syosetu.com/mypageblog/view/userid/76491/blogkey/145793/index.php?p=2\r\nhttp://mypage.syosetu.com/mypagefavnovelmain/list/userid/88780/\r\nhttp://mypage.syosetu.com/mypagefavuser/list/userid/88780/\r\nhttp://mypage.syosetu.com/mypagenovelhyoka/list/userid/88780/\r\nhttp://mypage.syosetu.com/mypage/reviewlist/userid/88780/\r\nhttp://xmypage.syosetu.com/mypageblog/list/xid/44910/\r\nhttp://xmypage.syosetu.com/mypageblog/view/xid/24986/blogkey/144187/\r\nhttps://xmypage.syosetu.com/mypage/novellist/xid/x7149bl/?xid=377112&all=1&all2=1&all3=1&all4=1&p=1",
+      "nextLink" : "//a[@title='next page' or @title='次へ' or ../@class='blogcomment_r']|(id('my_blog_l')|//div[@class='my_blog_l'])/a[not(//a[../@class='blogcomment_r'])]",
+      "pageElement" : "id('bloglistbg bloglist')/div|(id('blogbg')|id('main')/div[@id='blogview']|id('blog_comment')/h3)[not(id('blog_comment')//div[@class='blogcomment_l']/a)]|//div[@class='comment_view']|id('novellist novelpointlist novelreviewlist')/ul|id('favuser')//li|//div[@class='c-novel-list' or contains(concat(' ',@class,' '),' c-panel__list ')]/div",
       "url" : "^https?://x?mypage\\.syosetu\\.com/mypage"
    },
    {
