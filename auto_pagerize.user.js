@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240322214302
+// @version     0.1.20240330034314
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://minkara.carview.co.jp/car/mini/mini/partsreview/ https://minkara.carview.co.jp/car/mini/mini/note/ https://minkara.carview.co.jp/usercar/decotora/ https://minkara.carview.co.jp/note/?ci=1 https://minkara.carview.co.jp/partsreview/?bi=1&ci=1",
+      "insertBefore" : "",
+      "nextLink" : "//a[contains(@id,'lnkNext') or @class='page-num next']",
+      "pageElement" : "//*[not(self::a)][contains(@class,'page-num') or @class='pagechunk']/preceding-sibling::*[1]",
+      "url" : "^https?://minkara\\.carview\\.co\\.jp/"
+   },
    {
       "exampleUrl" : "https://jp.daisonet.com/collections/electricity",
       "nextLink" : "//a[@rel='next']",
@@ -80,7 +87,7 @@ function autoPagerize() {
       "exampleUrl" : "https://minkara.carview.co.jp/search/?q=f-zero&c=0\r\nhttps://minkara.carview.co.jp/blog/\r\nhttps://minkara.carview.co.jp/review/",
       "nextLink" : "//a[contains(@id,'lnkNext')]",
       "pageElement" : "//ul[contains(@class,'-list')]",
-      "url" : "^https:\\/\\/minkara.carview.co.jp\\/"
+      "url" : "^https://minkara\\.carview\\.co\\.jp\\/(this_string_is_required_to_exceed_86217)?"
    },
    {
       "exampleUrl" : "https://www.megahobby.jp/products/lookup/9/?sort=new",
@@ -21553,10 +21560,10 @@ function autoPagerize() {
       "url" : "^https?://books\\.rakuten\\.co\\.jp/search/"
    },
    {
-      "exampleUrl" : "http://minkara.carview.co.jp/en/car/mini/mini/partsreview/? http://minkara.carview.co.jp/en/car/mini/mini/note/ http://minkara.carview.co.jp/en/usercar/decotora/ http://minkara.carview.co.jp/en/note/?ci=1 http://minkara.carview.co.jp/en/partsreview/?bi=1&ci=1",
-      "nextLink" : "//a[contains(@id,'lnkNext') or @class='page-num next']",
-      "pageElement" : "//div[@class='mainright']/table[@class='car-table']//tr|//ul[ ../@class='maincontents_body displaymode-detail' or @class='pr_search_result_box' or @class='gallery-list-photo clearfix']/li",
-      "url" : "^https?://minkara\\.carview\\.co\\.jp/"
+      "exampleUrl" : "https://minkara.carview.co.jp/userid/2209010/blog/b/",
+      "nextLink" : "//div[@class='paging']//a[contains(., '>')]",
+      "pageElement" : "//div[@class='contents'][count(./*)>1]",
+      "url" : "^https?://minkara\\.carview\\.co\\.jp/userid/\\d+/blog/"
    },
    {
       "exampleUrl" : "http://ichi5c2.mint.aisnet.jp/ponihuri/phase1/ponihuri_1_chap0.html",
