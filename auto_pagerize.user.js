@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240402124728
+// @version     0.1.20240402154322
 // ==/UserScript==
 
 function autoPagerize() {
@@ -30,10 +30,9 @@ function autoPagerize() {
       "url" : "^https://juventus-journal\\.com/archives/\\d+"
    },
    {
-      "exampleUrl" : "https://minkara.carview.co.jp/car/mini/mini/partsreview/ https://minkara.carview.co.jp/car/mini/mini/note/ https://minkara.carview.co.jp/usercar/decotora/ https://minkara.carview.co.jp/note/?ci=1 https://minkara.carview.co.jp/partsreview/?bi=1&ci=1",
-      "insertBefore" : "",
+      "exampleUrl" : "https://minkara.carview.co.jp/car/mini/mini/partsreview/ https://minkara.carview.co.jp/car/mini/mini/note/ https://minkara.carview.co.jp/usercar/decotora/ https://minkara.carview.co.jp/note/?ci=1 https://minkara.carview.co.jp/partsreview/?bi=1&ci=1\r\n\r\nhttps://minkara.carview.co.jp/search/?q=f-zero&c=0\r\nhttps://minkara.carview.co.jp/blog/\r\nhttps://minkara.carview.co.jp/review/\r\n\r\nhttps://minkara.carview.co.jp/spot/unit.aspx\r\nhttps://minkara.carview.co.jp/like/1/\r\nhttps://minkara.carview.co.jp/select/\r\nhttps://minkara.carview.co.jp/summary/newly/\r\nhttps://minkara.carview.co.jp/summary/ranking/",
       "nextLink" : "//a[contains(@id,'lnkNext') or @class='page-num next']",
-      "pageElement" : "//*[not(self::a)][contains(@class,'page-num') or @class='pagechunk']/preceding-sibling::*[1]",
+      "pageElement" : "//div[contains(@class,'page-num') or @class='pagechunk']/preceding-sibling::*[self::ul[starts-with(@class, 'summary')] or .//a[contains(@href, '/userid/')]]",
       "url" : "^https?://minkara\\.carview\\.co\\.jp/"
    },
    {
@@ -89,12 +88,6 @@ function autoPagerize() {
       "nextLink" : "//a[@class='novelview_pager-next']",
       "pageElement" : "//div[@class='index_box']/*",
       "url" : "^https://(?:ncode|novel18)\\.syosetu\\.com/n[^/]+/"
-   },
-   {
-      "exampleUrl" : "https://minkara.carview.co.jp/search/?q=f-zero&c=0\r\nhttps://minkara.carview.co.jp/blog/\r\nhttps://minkara.carview.co.jp/review/",
-      "nextLink" : "//a[contains(@id,'lnkNext')]",
-      "pageElement" : "//ul[contains(@class,'-list')]",
-      "url" : "^https://minkara\\.carview\\.co\\.jp\\/(this_string_is_required_to_exceed_86217)?"
    },
    {
       "exampleUrl" : "https://www.megahobby.jp/products/lookup/9/?sort=new",
