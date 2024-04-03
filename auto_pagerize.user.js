@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240402154322
+// @version     0.1.20240403094322
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://minkara.carview.co.jp/usercar/\r\nhttps://minkara.carview.co.jp/usercar/decotora/",
+      "insertBefore" : "",
+      "nextLink" : "//a[contains(@id,'lnkNext') or @class='page-num next']",
+      "pageElement" : "//ul[contains(concat(' ', @class, ' '), ' usercar-list ')]",
+      "url" : "^https://minkara\\.carview\\.co\\.jp/usercar/"
+   },
    {
       "exampleUrl" : "https://juventus-journal.com/archives/129133",
       "insertBefore" : "",
