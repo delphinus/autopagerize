@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240403094322
+// @version     0.1.20240403124658
 // ==/UserScript==
 
 function autoPagerize() {
@@ -95,6 +95,12 @@ function autoPagerize() {
       "nextLink" : "//a[@class='novelview_pager-next']",
       "pageElement" : "//div[@class='index_box']/*",
       "url" : "^https://(?:ncode|novel18)\\.syosetu\\.com/n[^/]+/"
+   },
+   {
+      "exampleUrl" : "https://minkara.carview.co.jp/search/?q=f-zero&c=0",
+      "nextLink" : "//a[contains(@id,'lnkNext')]",
+      "pageElement" : "//section[@class='itemlist']/ul",
+      "url" : "^https://minkara\\.carview\\.co\\.jp/search/"
    },
    {
       "exampleUrl" : "https://www.megahobby.jp/products/lookup/9/?sort=new",
