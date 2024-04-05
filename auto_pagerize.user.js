@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240403124658
+// @version     0.1.20240405124644
 // ==/UserScript==
 
 function autoPagerize() {
@@ -23142,7 +23142,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "http://www.nicovideo.jp/newarrival\r\nhttp://www.nicovideo.jp/mylist_search/test\r\nhttp://www.nicovideo.jp/openlist/sm9\r\nhttp://www.nicovideo.jp/recent\r\nhttp://www.nicovideo.jp/related_tag/test\r\nhttp://www.nicovideo.jp/search/test\r\nhttp://www.nicovideo.jp/tag/test",
       "nextLink" : "(/descendant::span|//div[@class='pager']/a)[contains(@class,'active') or contains(@class,'here')]/following-sibling::a[1]",
-      "pageElement" : "id('PAGEBODY')/div[starts-with(@class,'content_672')]/*[preceding::table/@class='pager' or preceding-sibling::div[h1][not(count(following::table[@class='pager'])=2)]][following::table/@class='pager'][not(self::script)]|//div[contains(concat(' ',normalize-space(@class),' '), ' main ') or @data-main-contents]/div[contains(@class,'contentBody')]/ul[@class='list']/node()",
+      "pageElement" : "id('PAGEBODY')/div[starts-with(@class,'content_672')]/*[preceding::table/@class='pager' or preceding-sibling::div[h1][not(count(following::table[@class='pager'])=2)]][following::table/@class='pager'][not(self::script)]|//div[contains(concat(' ',normalize-space(@class),' '), ' main ') or @data-main-contents]/div[contains(@class,'contentBody')]/ul[@class='videoListInner']/node()",
       "url" : "^https?://(?:www|nine)\\.nicovideo\\.jp/(?:newarrival|mylist_search|migiue|openlist|recent|related_tag|search|tag)"
    },
    {
