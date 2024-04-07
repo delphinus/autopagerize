@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240405154318
+// @version     0.1.20240407010210
 // ==/UserScript==
 
 function autoPagerize() {
@@ -2227,10 +2227,10 @@ function autoPagerize() {
       "url" : "^https://natgeo\\.nikkeibp\\.co\\.jp/nng/magazine/"
    },
    {
-      "exampleUrl" : "https://www.nintendo.co.jp/interview/switch-oled/index.html",
+      "exampleUrl" : "https://www.nintendo.com/jp/interview/switch-oled/index.html",
       "nextLink" : "descendant::div[contains(@class,\"bottom\")][1]//a[not(contains(@class,\"prev\"))]",
       "pageElement" : "//div[@class=\"interview-container\"]/div[position()>2]",
-      "url" : "^https://www\\.nintendo\\.co\\.jp/interview/"
+      "url" : "^https://www\\.nintendo\\.com/jp/interview/"
    },
    {
       "exampleUrl" : "https://magmix.jp/post/63906 https://magmix.jp/archive",
