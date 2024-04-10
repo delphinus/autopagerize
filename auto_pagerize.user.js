@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240408124705
+// @version     0.1.20240410124720
 // ==/UserScript==
 
 function autoPagerize() {
@@ -10184,9 +10184,9 @@ function autoPagerize() {
       "url" : "^https://(www\\.)?etonline\\.com/"
    },
    {
-      "exampleUrl" : "https://natgeo.nikkeibp.co.jp/nng/article/20150312/438925/?P=1 https://natgeo.nikkeibp.co.jp/nng/article/20121107/329698/ https://natgeo.nikkeibp.co.jp/atcl/web/15/050700006/050700001/ https://natgeo.nikkeibp.co.jp/atcl/news/22/013100045/ https://natgeo.nikkeibp.co.jp/nng/news/",
+      "exampleUrl" : "https://natgeo.nikkeibp.co.jp/nng/article/20150312/438925/?P=1 https://natgeo.nikkeibp.co.jp/nng/article/20121107/329698/ https://natgeo.nikkeibp.co.jp/atcl/web/15/050700006/050700001/ https://natgeo.nikkeibp.co.jp/atcl/news/22/013100045/ https://natgeo.nikkeibp.co.jp/atcl/news/24/041000202/?P=1 https://natgeo.nikkeibp.co.jp/nng/news/",
       "nextLink" : "//a[@class='nextPage']|//span[@class='next']/a",
-      "pageElement" : "//div[@class='topPageNav']/following-sibling::*[./following-sibling::div[@class='btmPageNav']][not(id('kiji'))]|id('kiji')/p[last()]/preceding-sibling::*|id('kiji')/p[last()][./text()]|id('newsListResult')//li",
+      "pageElement" : "//div[@class='topPageNav']/following-sibling::*[./following-sibling::div[@class='btmPageNav']][not(id('kiji'))]|id('kiji')/*|id('newsListResult')//li",
       "url" : "^https://natgeo\\.nikkeibp\\.co\\.jp"
    },
    {
