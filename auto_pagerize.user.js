@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240410124720
+// @version     0.1.20240411154310
 // ==/UserScript==
 
 function autoPagerize() {
@@ -2821,9 +2821,9 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?shop-shimamura\\.com/"
    },
    {
-      "exampleUrl" : "https://www.tokyo-np.co.jp/tokyo/t_news\r\nhttps://www.tokyo-np.co.jp/tokyo/hotweb/1\r\nhttps://www.tokyo-np.co.jp/article_photo/list?article_id=159660&pid=589621",
-      "nextLink" : "//div[@class=\"pager\"]//a[contains(span/text(),\"次\")] | //a[@class=\"lnk next\"]",
-      "pageElement" : "//*[./div[contains(@data-href,\"/article/\")]] | //div[@class=\"cmp-thmb002\"]/div[@class=\"wrp\"]",
+      "exampleUrl" : "https://www.tokyo-np.co.jp/tokyo/t_news\r\nhttps://www.tokyo-np.co.jp/tokyo/gururi/1\r\nhttps://www.tokyo-np.co.jp/f/photo/square\r\nhttps://www.tokyo-np.co.jp/beans/recipe\r\nhttps://www.tokyo-np.co.jp/tags/tag_movie\r\nhttps://www.tokyo-np.co.jp/english_articles/covid19_in_english\r\nhttps://www.tokyo-np.co.jp/tags/tokyo140th\r\nhttps://www.tokyo-np.co.jp/n/genpatsu\r\nhttps://www.tokyo-np.co.jp/event/list/buyou",
+      "nextLink" : "//div[@class='cmp-misc002']//li[@class='is-active']/following-sibling::li[1]/a[number() > 0]",
+      "pageElement" : "//div[@class='pager']/../preceding-sibling::div[1][contains(@class, '-lst00')]",
       "url" : "^https?://www\\.tokyo-np\\.co\\.jp/"
    },
    {
