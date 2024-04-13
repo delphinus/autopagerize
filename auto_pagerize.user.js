@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240411154310
+// @version     0.1.20240413094314
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22499,8 +22499,8 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://www.dafont.com/theme.php?cat=113\r\nhttps://www.dafont.com/new.php",
-      "nextLink" : "//span[@class='select']/following-sibling::a[1]",
-      "pageElement" : "//div[@class='titlebar'][1]/following-sibling::div[form/@name='nb'][1]/following-sibling::*[following-sibling::div/@class='titlebar']",
+      "nextLink" : "//a[@title=\"Keyboard shortcut: Right arrow\"]",
+      "pageElement" : "//a[@name]|//a[@name]/following-sibling::*[preceding-sibling::div/@class=\"dfxsmall\"][following-sibling::div/@class=\"titlebar\"]",
       "url" : "^https://(www\\.)?dafont\\.com/"
    },
    {
