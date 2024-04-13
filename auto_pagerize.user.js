@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240413094314
+// @version     0.1.20240413154302
 // ==/UserScript==
 
 function autoPagerize() {
@@ -4566,9 +4566,9 @@ function autoPagerize() {
       "url" : "^https://todai-umeet\\.com/"
    },
    {
-      "exampleUrl" : "https://www.businessinsider.jp/articles/",
+      "exampleUrl" : "https://www.businessinsider.jp/articles/\r\nhttps://www.businessinsider.jp/moneyplan/",
       "nextLink" : "//link[@rel=\"next\"]",
-      "pageElement" : "//div[@class=\"p-cardList\"]",
+      "pageElement" : "//div[contains(concat(' ', @class, ' '), ' p-cardList ')]",
       "url" : "^https?://www\\.businessinsider\\.jp/."
    },
    {
