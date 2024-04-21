@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240413154302
+// @version     0.1.20240421064412
 // ==/UserScript==
 
 function autoPagerize() {
@@ -166,9 +166,8 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://netmall.hardoff.co.jp/cate/00010012/?q=%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3",
-      "insertBefore" : "",
       "nextLink" : "//a[contains(concat(' ',@class,' '),' next ')]",
-      "pageElement" : "//div[contains(concat(' ',@class,' '),' itemcolmn ')]/div",
+      "pageElement" : "//div[@class='searchinfo-mainwrap-center']/div[contains(concat(' ',@class,' '),' itemcolmn ')]/div",
       "url" : "^https://netmall\\.hardoff\\.co\\.jp/cate/"
    },
    {
