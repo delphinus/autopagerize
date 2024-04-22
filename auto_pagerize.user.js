@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240421064412
+// @version     0.1.20240422214317
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://comic-boost.com/content/00050001",
+      "insertBefore" : "//div[@class='width-container']/node()[last()]",
+      "nextLink" : "//li[contains(concat(' ',@class,' '),' to-next ')]/a",
+      "pageElement" : "//div[@class='book-product-wrapper']",
+      "url" : "^https://comic-boost\\.com/content/"
+   },
    {
       "exampleUrl" : "https://minkara.carview.co.jp/usercar/\r\nhttps://minkara.carview.co.jp/usercar/decotora/",
       "insertBefore" : "",
