@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240422214317
+// @version     0.1.20240424184308
 // ==/UserScript==
 
 function autoPagerize() {
@@ -11381,7 +11381,7 @@ function autoPagerize() {
       "Stylish" : "@-moz-document url(\"https://variety.com/\") {\r\n img.lazy { display: inline-block !important; } \r\nli.l-list__item figure a{padding:0;}\r\nli.l-list__item:nth-of-type(-n+14) figure a{opacity:0;height:100%}\r\n}",
       "bookmarklet" : "Array.prototype.forEach.call(document.querySelectorAll('img'), function(img) { var lazySrc = img.hasAttribute('data-src') ? img.getAttribute('data-src') : img.getAttribute('data-original'); if (lazySrc) { img.src = lazySrc;} });",
       "exampleUrl" : "https://variety.com https://variety.com/v/tv/",
-      "nextLink" : "//div[@class='o-more-link // lrv-u-margin-l-auto']/a",
+      "nextLink" : "//div[starts-with(normalize-space(@class),'o-more-link // lrv-u-text-align-right ')]/a",
       "pageElement" : "//ul[contains(@class,'o-tease-news-list')]/li[not(.//div[contains(@id,'sponsored')])]",
       "url" : "^https://variety\\.com"
    },
