@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240424184308
+// @version     0.1.20240502124802
 // ==/UserScript==
 
 function autoPagerize() {
@@ -476,7 +476,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "https://young-machine.com/2022/08/06/354094/\r\nhttps://young-machine.com/latest-model/\r\nhttps://young-machine.com/2023/09/15/489213/",
       "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a",
-      "pageElement" : "//section[@class='content']/*[not((.|preceding-sibling::div)[contains(@class, 'pagination')])]|id('wym_custom_archive')",
+      "pageElement" : "(//section[@class='content']|//div[@class='fc content selector'])[last()]/*[not((.|preceding-sibling::div)[contains(@class, 'pagination')])]|id('wym_custom_archive')",
       "url" : "^https://young-machine\\.com/"
    },
    {
@@ -2524,7 +2524,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "https://bushoojapan.com/\r\nhttps://bushoojapan.com/bushoo/others/2022/01/05/87277",
       "nextLink" : "//link[@rel=\"next\"]",
-      "pageElement" : "//main//div[contains(@class, 'kanren')]/*\r\n|//div[@class='entry-content']/h2[1]/preceding-sibling::*[1]/following-sibling::*",
+      "pageElement" : "//main//aside/div[contains(@class, 'kanren')]/*\r\n|//div[@class='entry-content']/h2[1]/preceding-sibling::*[1]/following-sibling::*",
       "url" : "^https?://bushoojapan\\.com/"
    },
    {
