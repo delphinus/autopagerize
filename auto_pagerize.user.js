@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240510154311
+// @version     0.1.20240510184303
 // ==/UserScript==
 
 function autoPagerize() {
@@ -10705,7 +10705,7 @@ function autoPagerize() {
       "exampleUrl" : "http://nhentai.net/artist/kokutou-nikke/ http://nhentai.net/?page=3 http://nhentai.net/g/124271/1/",
       "insertBefore" : "//section[@class='pagination']",
       "nextLink" : "//a[@class='next']",
-      "pageElement" : "id('content')//*[@class='container index-container' or @id='favcontainer' or @id='tag-container'] | id('content')//*[@id='image-container']/*",
+      "pageElement" : "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
       "url" : "^https?://nhentai\\.net/"
    },
    {
