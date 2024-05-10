@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240510034307
+// @version     0.1.20240510154311
 // ==/UserScript==
 
 function autoPagerize() {
@@ -14046,9 +14046,10 @@ function autoPagerize() {
       "url" : "^https?://(www\\.)?fujisan\\.co\\.jp/"
    },
    {
+      "comment" : "CSSで偶数番目のtr要素が非表示になるためtable要素を取得する必要があります。",
       "exampleUrl" : "https://www.bookshop-ps.com/bsp/bsp_mag_search?sha=1&sc=066000",
       "nextLink" : "//a[contains(.,'次へ>>>')]",
-      "pageElement" : "//table[@class='list']//tr[last()]/preceding-sibling::tr[not(@bgcolor)]",
+      "pageElement" : "//table[@class='list']",
       "url" : "^https://(www\\.)?bookshop-ps\\.com/bsp/bsp_(?!detail|magcode)"
    },
    {
