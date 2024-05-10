@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240502124802
+// @version     0.1.20240510034307
 // ==/UserScript==
 
 function autoPagerize() {
@@ -10701,10 +10701,11 @@ function autoPagerize() {
       "url" : "^https?://apachan\\.net/"
    },
    {
+      "comment" : "Adjusted the pageElement to not include the image-container because it causes the image size to be small initially. Updated on behalf of: https://github.com/sixcious/infy-scroll/issues/85",
       "exampleUrl" : "http://nhentai.net/artist/kokutou-nikke/ http://nhentai.net/?page=3 http://nhentai.net/g/124271/1/",
       "insertBefore" : "//section[@class='pagination']",
       "nextLink" : "//a[@class='next']",
-      "pageElement" : "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
+      "pageElement" : "id('content')//*[@class='container index-container' or @id='favcontainer' or @id='tag-container'] | id('content')//*[@id='image-container']/*",
       "url" : "^https?://nhentai\\.net/"
    },
    {
