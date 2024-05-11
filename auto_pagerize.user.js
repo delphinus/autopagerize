@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240510184303
+// @version     0.1.20240511034312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -8407,8 +8407,8 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://buzz-plus.com/?s=a",
-      "nextLink" : "//span[@class=\"current\"]/following-sibling::a[1]",
-      "pageElement" : "//ul[@class=\"article-list\"]/li",
+      "nextLink" : "//span[@aria-current='page'][number()>0]/following-sibling::a[1]",
+      "pageElement" : "//div[@class='color-blog-content-masonry']",
       "url" : "^https://buzz-plus\\.com/"
    },
    {
