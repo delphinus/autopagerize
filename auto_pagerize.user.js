@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240511034312
+// @version     0.1.20240513184258
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,12 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.fnn.jp/articles/-/652714",
+      "nextLink" : "//ul[@class='m-pager-list']/li[./span]/following-sibling::li/a",
+      "pageElement" : "//div[@class=\"m-pager\"]/preceding-sibling::*[./preceding-sibling::*]",
+      "url" : "^https://www\\.fnn\\.jp/articles/-/\\d"
+   },
    {
       "exampleUrl" : "https://comic-boost.com/content/00050001",
       "insertBefore" : "//div[@class='width-container']/node()[last()]",
