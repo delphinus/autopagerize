@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240513184258
+// @version     0.1.20240516154304
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://jp.cryptonews.com/news/",
+      "insertBefore" : "",
+      "nextLink" : "//span[@aria-current='page'][number()>0]/following-sibling::a[1]",
+      "pageElement" : "id('load_more_target')",
+      "url" : "^https://jp\\.cryptonews\\.com/"
+   },
    {
       "exampleUrl" : "https://www.fnn.jp/articles/-/652714",
       "nextLink" : "//ul[@class='m-pager-list']/li[./span]/following-sibling::li/a",
