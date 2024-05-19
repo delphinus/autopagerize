@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240516154304
+// @version     0.1.20240519010219
 // ==/UserScript==
 
 function autoPagerize() {
@@ -15213,10 +15213,9 @@ function autoPagerize() {
       "url" : "^http://japanese\\.china\\.org\\.cn/\\w+(?:/txt)?/\\d{4}-\\d{2}/\\d{2}/content_\\d+(?:_\\d+)?\\.htm"
    },
    {
-      "Stylish" : "@-moz-document domain(\"hb-nippon.com\") {\r\n  [src*=\"banner\"]{display:none !important;}\r\n}",
-      "exampleUrl" : "http://www.hb-nippon.com/interview/785-intvw2012/6461-20120227no92\r\nhttp://www.hb-nippon.com/column/437-baseballclub/6966-20120117no55bc\r\nhttp://www.hb-nippon.com/interview/785-intvw2012\r\nhttp://www.hb-nippon.com/column/626-tokusyu/6741-20110330no01tks\r\nhttp://www.hb-nippon.com/column/626-tokusyu/7069-20120424no06tks\r\nhttp://www.hb-nippon.com/column/1036-syakaizin/7639-20130515no01ab?page=3\r\nhttp://www.hb-nippon.com/news/52-column\r\nhttp://www.hb-nippon.com/interview/1173-intvw2014/6643-20140225no176\r\nhttp://www.hb-nippon.com/column/437-baseballclub/8348-20140313no124\r\nhttp://www.hb-nippon.com/column/437-baseballclub/9571-20150705no250?page=2\r\nhttp://www.hb-nippon.com/interview/1507-intvw2016/6932-20160409no390?page=2\r\nhttp://www.hb-nippon.com/bbs/player",
-      "nextLink" : "//li[@class='current']/following-sibling::li[1]/a",
-      "pageElement" : "//div[@class='article_wrap']/p[1][following-sibling::div[@class='para_title_blue' or @class='device_box']]/following-sibling::*|//ul[@class='list']/li|//dl[@class='newslist_sky']/*|//div[@class='article_wrap'][div[@class='para_title_blue'][not(preceding-sibling::p)]]/*|id('topics')/table//tbody/tr",
+      "exampleUrl" : "https://www.hb-nippon.com/2024/05/05/2523048/\r\nhttps://www.hb-nippon.com/players-directory/\r\nhttps://www.hb-nippon.com/category/column/",
+      "nextLink" : "//span[contains(@class, 'current')][number()>0]/following-sibling::a[1][parent::p[@class='post-nav-links'] or not(ancestor::article)]",
+      "pageElement" : "//p[@class='post-nav-links']/preceding-sibling::*[preceding-sibling::div[contains(@class, 'share_save_container')]]|\r\n//ul[contains(concat(' ', @class, ' '), ' mvp-main-blog-wrap ')]",
       "url" : "^https?://(?:www\\.)?hb-nippon\\.com/"
    },
    {
