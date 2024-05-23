@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240519010219
+// @version     0.1.20240523094312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://filmarks.com/users/dpandaramu/clips",
+      "insertBefore" : "",
+      "nextLink" : "//a[@rel='next']",
+      "pageElement" : "//div[@class='c-content-item']",
+      "url" : "^https?://filmarks\\.com/"
+   },
    {
       "exampleUrl" : "https://jp.cryptonews.com/news/",
       "insertBefore" : "",
