@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240523094312
+// @version     0.1.20240523124809
 // ==/UserScript==
 
 function autoPagerize() {
@@ -494,9 +494,9 @@ function autoPagerize() {
       "url" : "^https?://www\\.igorslab\\.de/.*"
    },
    {
-      "exampleUrl" : "https://young-machine.com/2022/08/06/354094/\r\nhttps://young-machine.com/latest-model/\r\nhttps://young-machine.com/2023/09/15/489213/",
-      "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a",
-      "pageElement" : "(//section[@class='content']|//div[@class='fc content selector'])[last()]/*[not((.|preceding-sibling::div)[contains(@class, 'pagination')])]|id('wym_custom_archive')",
+      "exampleUrl" : "https://young-machine.com/latest-article/\r\nhttps://young-machine.com/page/2/\r\nhttps://young-machine.com/2022/08/06/354094/\r\nhttps://young-machine.com/2023/09/15/489213/\r\nhttps://young-machine.com/creator/2024/05/18/547866/",
+      "nextLink" : "//li[contains(@class, 'current')][number()>0]/following-sibling::li[1]/a|//div[@class='wym_front_more']/a",
+      "pageElement" : "(//section[@class='content']|//div[@class='fc content selector'])[last()]/*[not(preceding-sibling::div[.//li[contains(@class, 'pagePager__item-current')]])]|id('wym_custom_archive')",
       "url" : "^https://young-machine\\.com/"
    },
    {
