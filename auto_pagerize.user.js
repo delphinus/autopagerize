@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240526094308
+// @version     0.1.20240603064308
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://shueisha.online/articles/-/250383",
+      "insertBefore" : "",
+      "nextLink" : "//a[contains(concat(' ', normalize-space(@class), ' '), ' --next ')]",
+      "pageElement" : "//div[contains(concat(' ', normalize-space(@class), ' '), ' article-body ')]|//div[contains(concat(' ', normalize-space(@class), ' '), ' gallery-image ')]",
+      "url" : "^https://shueisha\\.online/articles/"
+   },
    {
       "exampleUrl" : "https://filmarks.com/users/dpandaramu/clips",
       "insertBefore" : "",
