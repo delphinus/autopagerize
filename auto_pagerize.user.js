@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240603064308
+// @version     0.1.20240607154312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -8942,9 +8942,10 @@ function autoPagerize() {
       "url" : "^https?://blogs\\.opera\\.com/"
    },
    {
+      "comment" : "最後のアイテム内に継ぎ足されていたのを修正",
       "exampleUrl" : "https://speakerdeck.com/p/all",
       "nextLink" : "//a[@rel='next']",
-      "pageElement" : "//div[@class=\"sd-main\"]//*[./a[@title]]",
+      "pageElement" : "//div[@class=\"sd-main\"]//*[./div/a[@title]]",
       "url" : "^https://speakerdeck\\.com/.+"
    },
    {
