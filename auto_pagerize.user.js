@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240607154312
+// @version     0.1.20240614124904
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://xxxclub.cc/torrents/browse/0/\r\nhttps://xxxclub.to/torrents/browse/1/",
+      "insertBefore" : "",
+      "nextLink" : "//a[contains(@class, 'active')][number()>0]/following-sibling::a[1]",
+      "pageElement" : "//div[contains(concat(' ', @class, ' '), ' browsetableinside ')]/ul",
+      "url" : "^https://xxxclub\\.(cc|to)/"
+   },
    {
       "exampleUrl" : "https://shueisha.online/articles/-/250383",
       "insertBefore" : "",
