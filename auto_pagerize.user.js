@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240614124904
+// @version     0.1.20240615034311
 // ==/UserScript==
 
 function autoPagerize() {
@@ -4643,11 +4643,10 @@ function autoPagerize() {
       "url" : "^http://agora-web\\.jp/archives/category/"
    },
    {
-      "exampleUrl" : "https://gendai.ismedia.jp/articles/-/65430",
-      "insertBefore" : "",
+      "exampleUrl" : "https://gendai.media/articles/-/65430",
       "nextLink" : "//div[@class=\"nextpageTitle\"]/a",
       "pageElement" : "//div[@class=\"articleBody\"]",
-      "url" : "^https://gendai\\.ismedia\\.jp/articles/-/"
+      "url" : "^https://gendai\\.media/articles/-/"
    },
    {
       "bookmarklet" : "for (var i = 0; i < $(\"img[ajax]\").length; i++) { $(\"img[ajax]\").eq(i).attr(\"src\", $(\"img[ajax]\").eq(i).attr(\"ajax\")); }",
