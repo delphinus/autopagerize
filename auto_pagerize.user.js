@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240615034311
+// @version     0.1.20240622010211
 // ==/UserScript==
 
 function autoPagerize() {
@@ -8644,7 +8644,7 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://syosetu.com/favnovelmain/list/?nowcategory=1&order=newlist\r\nhttps://syosetu.com/favnovelmain/isnoticelist/\r\nhttps://syosetu.com/usernovelimpression/list/\r\nhttps://syosetu.com/favuser/list/\r\nhttps://syosetu.com/messagebox/top/",
-      "nextLink" : "//div[@class='c-pager']/span[contains(concat(' ',@class,' '),' is-current ')]/following-sibling::a",
+      "nextLink" : "//div[contains(concat(' ',@class,' '),' c-up-pager ')]//span[contains(concat(' ',@class,' '),' is-current ')]/following-sibling::a",
       "pageElement" : "//ul[contains(concat(' ',@class,' '),' c-up-panel__list ')]/li",
       "url" : "^https?://syosetu\\.com/"
    },
