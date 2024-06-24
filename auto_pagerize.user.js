@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240622010211
+// @version     0.1.20240624154314
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://comic-boost.com/genre/\r\nhttps://comic-boost.com/tag/%E7%95%B0%E4%B8%96%E7%95%8C",
+      "insertBefore" : "",
+      "nextLink" : "//li[contains(concat(' ',@class,' '),' to-next ')]/a",
+      "pageElement" : "//div[contains(concat(' ',@class,' '),' layout-book-section ')]",
+      "url" : "^https://comic-boost\\.com/"
+   },
    {
       "exampleUrl" : "https://xxxclub.cc/torrents/browse/0/\r\nhttps://xxxclub.to/torrents/browse/1/",
       "insertBefore" : "",
