@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240624154314
+// @version     0.1.20240702154312
 // ==/UserScript==
 
 function autoPagerize() {
@@ -5440,9 +5440,9 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://www.alphapolis.co.jp/novel/638137573/992069999/episode/423049",
-      "nextLink" : "//div[id(\"main\")]/div[contains(@class,\"episode-navigation\")][2]/a[contains(@class,\"next\")]",
-      "pageElement" : "//div[id(\"main\")]/div[contains(@class,\"novel-body\")]",
-      "url" : "^https://(www\\.)?alphapolis\\.co\\.jp/novel/*"
+      "nextLink" : "//a[contains(concat(' ', @class, ' '), ' next ')]",
+      "pageElement" : "id('main')/div[contains(@class, 'novel-body')]",
+      "url" : "^https://(www\\.)?alphapolis\\.co\\.jp/novel/\\d+"
    },
    {
       "exampleUrl" : "http://j-books.shueisha.co.jp/file/tenseiyusha.html\r\nhttp://j-books.shueisha.co.jp/file/tenseiyusha2.html\r\nhttp://j-books.shueisha.co.jp/file/shizurusan.html",
