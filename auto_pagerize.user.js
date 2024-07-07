@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240702154312
+// @version     0.1.20240707064311
 // ==/UserScript==
 
 function autoPagerize() {
@@ -6466,7 +6466,7 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://www.ecosia.org/search?q=hallo",
-      "insertBefore" : "//div[@class='pagination']",
+      "insertBefore" : "//div[contains(concat(' ', @class, ' '), ' mainline__footer ')]",
       "nextLink" : "//a[@data-test-id='next-button']",
       "pageElement" : "//section[@data-test-id='mainline']/div[.//article]",
       "url" : "^https://www\\.ecosia\\.org/search\\?"
