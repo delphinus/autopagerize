@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240707064311
+// @version     0.1.20240710094309
 // ==/UserScript==
 
 function autoPagerize() {
@@ -14667,7 +14667,7 @@ function autoPagerize() {
       "exampleUrl" : "https://togetter.com/li/351535\r\nhttps://togetter.com/li/1060348?page=38",
       "insertBefore" : "id('hidden_tweet_box')/following-sibling::node()[1]",
       "nextLink" : "//link[@rel='next']",
-      "pageElement" : "//div[contains(concat(' ',@class,' '),' tweet_box ')]/div[not(@id)]",
+      "pageElement" : "//section[contains(concat(' ',@class,' '),' tweet_box ')]/div[not(@id)]",
       "url" : "^https?://togetter\\.com/li/"
    },
    {
