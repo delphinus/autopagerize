@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240710094309
+// @version     0.1.20240714010240
 // ==/UserScript==
 
 function autoPagerize() {
@@ -18414,8 +18414,8 @@ function autoPagerize() {
    {
       "exampleUrl" : "https://filehippo.com/latest\r\nhttps://filehippo.com/jp/latest/\r\nhttps://news.filehippo.com/blog/",
       "nextLink" : "//link[@rel='next']|//a[@class='next']",
-      "pageElement" : "//ul[@class='list-programs mb-m']/li|//div[contains(concat(' ', @class, ' '), ' post-item ')]",
-      "url" : "^https://.*filehippo\\.com/."
+      "pageElement" : "//ul[@class='list-programs mb-m']/li|//div[contains(concat(' ', @class, ' '), ' post-item ') and contains(@class, 'type-post')]",
+      "url" : "^https://(\\w+\\.)?filehippo\\.com/."
    },
    {
       "exampleUrl" : "http://www.hkepc.com/coverStory http://www.hkepc.com/moreNews http://www.hkepc.com/miniNews http://www.hkepc.com/review http://www.hkepc.com/member",
@@ -21843,9 +21843,9 @@ function autoPagerize() {
       "url" : "^https://www\\.washingtonpost\\.com/wp-dyn/content/article/"
    },
    {
-      "exampleUrl" : "https://www.pcmag.com/picks",
+      "exampleUrl" : "https://www.pcmag.com/picks\r\nhttps://www.pcmag.com/categories/system-utilities",
       "nextLink" : "//a[@rel='next']",
-      "pageElement" : "//div[@class='w-full']",
+      "pageElement" : "//ul[contains(concat(' ', @class, ' '), ' pagination ')]/preceding-sibling::div[@class='w-full']",
       "url" : "^https://(www\\.)?pcmag\\.com/."
    },
    {
@@ -23090,7 +23090,7 @@ function autoPagerize() {
       "exampleUrl" : "http://labs.ceek.jp/hbnews/list.cgi",
       "insertBefore" : "//h3[@class=\"main-navi\"]",
       "nextLink" : "//h3[@class=\"main-navi\"]/a[last()]",
-      "pageElement" : "//div[@class=\"entry\"][position()!=1]",
+      "pageElement" : "//div[@class=\"entry\"]",
       "url" : "^http://labs\\.ceek\\.jp/hbnews/."
    },
    {
