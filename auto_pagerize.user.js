@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240714010240
+// @version     0.1.20240714034337
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://footwearnews.com/page/2/",
+      "insertBefore" : "",
+      "nextLink" : "descendant::a[contains(@class,'next')][last()]",
+      "pageElement" : "//div[@class='c-arrows']/preceding-sibling::ul[@class='l-list']",
+      "url" : "^https://footwearnews\\.com/"
+   },
    {
       "exampleUrl" : "https://comic-boost.com/genre/\r\nhttps://comic-boost.com/tag/%E7%95%B0%E4%B8%96%E7%95%8C",
       "insertBefore" : "",
@@ -11827,10 +11834,10 @@ function autoPagerize() {
       "url" : "^https://kai-you\\.net/"
    },
    {
-      "exampleUrl" : "https://www.deadline.com/ https://deadline.com/vcategory/the-contenders-emmys/page/2/ https://deadline.com/tag/caa/page/2/ https://www.bollywoodlife.com/ https://footwearnews.com/page/2/",
+      "exampleUrl" : "https://www.deadline.com/ https://deadline.com/vcategory/the-contenders-emmys/page/2/ https://deadline.com/tag/caa/page/2/ https://www.bollywoodlife.com/",
       "nextLink" : "descendant::a[contains(@class,'next')][last()]|//div[@class='nav-previous']/a|//div[contains(@class,'more-stories')]/a[contains(@class,'a-icon-right-arrow')]",
-      "pageElement" : "//div[contains(@class,'a-archive-grid__story')]|//section[@class='pmc-u-margin-tb-1']//*[div[contains(@class,'o-card')]][1]|//div[@class='story_list_blk']/*|//li[@class='l-list__item'][article]|id('main')/article[@id]",
-      "url" : "^https?://.*(?:bollywoodlife|deadline|footwearnews)\\.com"
+      "pageElement" : "//div[contains(@class,'a-archive-grid__story')]|//section[@class='pmc-u-margin-tb-1']//*[div[contains(@class,'o-card')]][1]|//div[@class='story_list_blk']/*|id('main')/article[@id]",
+      "url" : "^https?://.*(?:bollywoodlife|deadline)\\.com"
    },
    {
       "exampleUrl" : "https://www.crunchyroll.com/forumtopic-852431/crunchyroll-is-now-on-chromecast https://www.crunchyroll.com/forumcategory-391016/movies-and-tv-shows",
