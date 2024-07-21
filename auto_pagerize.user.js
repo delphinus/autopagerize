@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240714034337
+// @version     0.1.20240721154310
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,20 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.creativeuncut.com/art_kirbys-return-to-dream-land_a.html",
+      "insertBefore" : "",
+      "nextLink" : "//a[img[@src='imgs/next-page.jpg']]",
+      "pageElement" : "//div[@class='glry']",
+      "url" : "^https://www\\.creativeuncut\\.com/"
+   },
+   {
+      "exampleUrl" : "https://www.cdjournal.com/main/news/?type=new\r\nhttps://www.cdjournal.com/release/do/?target=cd&g=all&term=current",
+      "insertBefore" : "",
+      "nextLink" : "//img[@alt='next']/parent::a",
+      "pageElement" : "id('NWrelart:Body release_list')[last()]/*",
+      "url" : "^https://www\\.cdjournal\\.com/"
+   },
    {
       "exampleUrl" : "https://footwearnews.com/page/2/",
       "insertBefore" : "",
@@ -2102,10 +2116,10 @@ function autoPagerize() {
       "url" : "^https://hollywoodlife\\.com/"
    },
    {
-      "exampleUrl" : "https://comicvine.gamespot.com/characters/ https://comicvine.gamespot.com/series/ https://comicvine.gamespot.com/movies/ https://comicvine.gamespot.com/issues/",
-      "insertBefore" : "",
+      "comment" : "cf. http://wedata.net/items/32471?rev=156036",
+      "exampleUrl" : "https://comicvine.gamespot.com/characters/ https://comicvine.gamespot.com/series/ https://comicvine.gamespot.com/movies/ https://comicvine.gamespot.com/issues/\r\nhttps://comicvine.gamespot.com/news/",
       "nextLink" : "//a[@title=\"Next page\"]",
-      "pageElement" : "//ul[contains(@class,\"editorial\") and contains(@class,\"compact\")]",
+      "pageElement" : "id('river')//*[contains(concat(' ', @class, ' '), ' editorial ')]",
       "url" : "^https://comicvine\\.gamespot\\.com/"
    },
    {
@@ -7713,7 +7727,7 @@ function autoPagerize() {
    {
       "exampleUrl" : "http://thehackernews.com/",
       "nextLink" : "id('blog-pager-older-link')/a",
-      "pageElement" : "//article",
+      "pageElement" : "id('Blog1')//div[contains(concat(' ', @class, ' '), ' body-post ')]",
       "url" : "^https://thehackernews\\.com/"
    },
    {
@@ -21474,9 +21488,10 @@ function autoPagerize() {
       "url" : "^https://itp\\.ne\\.jp/"
    },
    {
-      "considerationUrl" : "http://jbpress.ismedia.jp/articles/-/5619 http://jbpress.ismedia.jp/articles/-/3524 http://jbpress.ismedia.jp/articles/-/42311 ",
+      "comment" : "https://jbpress.ismedia.jp/articles/-/82158?page=4 から別の記事を取得しないように修正",
+      "considerationUrl" : "http://jbpress.ismedia.jp/articles/-/5619 http://jbpress.ismedia.jp/articles/-/3524 http://jbpress.ismedia.jp/articles/-/42311 https://jbpress.ismedia.jp/articles/-/82158?page=4",
       "exampleUrl" : "http://wedge.ismedia.jp/articles/-/142",
-      "nextLink" : "//*[contains(@class,'next')]/descendant-or-self::a",
+      "nextLink" : "//*[contains(@class,'next')]/descendant-or-self::a[contains(@href,'page=')]",
       "pageElement" : "//div[contains(@class, 'article-body')][./*][not(//div[contains(@class,'skin-premium')])]",
       "url" : "^https?://(?:jbpress|wedge)\\.ismedia\\.jp/articles/"
    },
