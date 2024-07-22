@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240721154310
+// @version     0.1.20240722184344
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22603,9 +22603,9 @@ function autoPagerize() {
       "url" : "^https?://yaruomatome\\.blog\\.2nt\\.com/"
    },
    {
-      "exampleUrl" : "http://toyokeizai.net/articles/-/11744",
+      "exampleUrl" : "https://toyokeizai.net/articles/-/11744",
       "nextLink" : "//*[@class=\"next\"]/a",
-      "pageElement" : "id(\"article-body-inner\")/*",
+      "pageElement" : "//div[contains(concat(' ', normalize-space(@class), ' '), ' article-body-inner ')]|id('article-body-inner')",
       "url" : "^https?://(www\\.)?toyokeizai\\.net/articles/"
    },
    {
