@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240722184344
+// @version     0.1.20240802094300
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "",
+      "insertBefore" : "",
+      "nextLink" : "//div[@class='pagination']/b/a[last()]",
+      "pageElement" : "//div[@class='act-video-list']",
+      "url" : "^https://www.minnano-av\\.com/"
+   },
    {
       "exampleUrl" : "https://www.creativeuncut.com/art_kirbys-return-to-dream-land_a.html",
       "insertBefore" : "",
