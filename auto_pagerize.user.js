@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240802124930
+// @version     0.1.20240804034308
 // ==/UserScript==
 
 function autoPagerize() {
@@ -23,18 +23,17 @@ function autoPagerize() {
     
     var SITEINFO = [
    {
-      "exampleUrl" : "https://missav.com/ja/search/%E4%B8%80%E4%B9%8B%E7%80%AC%E3%81%99%E3%81%9A",
+      "exampleUrl" : "https://www.minnano-av.com/actress218689.html",
       "insertBefore" : "",
-      "nextLink" : "//span[@class='relative z-0 inline-flex shadow-sm']/a[last()]",
-      "pageElement" : "//div[@class='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5']",
-      "url" : "^https://missav\\.com/"
-   },
-   {
-      "exampleUrl" : "",
-      "insertBefore" : "",
-      "nextLink" : "//div[@class='pagination']/b/a[last()]",
+      "nextLink" : "//div[@class='pagination']/b/a[last()][@title='']\r\n",
       "pageElement" : "//div[@class='act-video-list']",
       "url" : "^https://www.minnano-av\\.com/"
+   },
+   {
+      "exampleUrl" : "https://missav.com/dm36/ja/actresses/%E4%B8%80%E4%B9%8B%E7%80%AC%E3%81%99%E3%81%9A",
+      "nextLink" : "//span[@class='relative z-0 inline-flex shadow-sm']/a[last()][@rel='next']",
+      "pageElement" : "//div[@class='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5']",
+      "url" : "^https://missav\\.com/"
    },
    {
       "exampleUrl" : "https://www.creativeuncut.com/art_kirbys-return-to-dream-land_a.html",
