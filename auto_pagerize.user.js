@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240813064429
+// @version     0.1.20240813094305
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,13 +22,6 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
-   {
-      "exampleUrl" : "https://duckduckgo.com/?q=AutoPagerize&ia=web",
-      "insertBefore" : "",
-      "nextLink" : "//*[@id=\"more-results\"]",
-      "pageElement" : "//*[@id=\"web_content_wrapper\"]",
-      "url" : "^https://duckduckgo\\.com/"
-   },
    {
       "exampleUrl" : "https://www.minnano-av.com/actress218689.html",
       "insertBefore" : "",
