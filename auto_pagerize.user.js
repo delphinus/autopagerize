@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240818094315
+// @version     0.1.20240818124909
 // ==/UserScript==
 
 function autoPagerize() {
@@ -5443,12 +5443,6 @@ function autoPagerize() {
       "nextLink" : "//a[@class=\"next\"]",
       "pageElement" : "//div[@id=\"mms1\"]/following-sibling::div[1]",
       "url" : "^https://m\\.nvshens\\.com/g/(.*)/"
-   },
-   {
-      "exampleUrl" : "https://2020.yahoo.co.jp/column/detail/201810250001-spnavi/",
-      "nextLink" : "//a[span/text()=\"次へ\"]",
-      "pageElement" : "//section[@class=\"article__body\"]",
-      "url" : "^https://2020\\.yahoo\\.co\\.jp/column/"
    },
    {
       "exampleUrl" : "https://www.usmagazine.com/celebrity-news/ https://www.usmagazine.com/celebrity-news/2/",
