@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240818010239
+// @version     0.1.20240818094315
 // ==/UserScript==
 
 function autoPagerize() {
@@ -24,8 +24,7 @@ function autoPagerize() {
     var SITEINFO = [
    {
       "exampleUrl" : "https://www.minnano-av.com/actress218689.html",
-      "insertBefore" : "",
-      "nextLink" : "//div[@class='pagination']/b/a[last()][@title='']\r\n",
+      "nextLink" : "//div[@class='pagination']/b/a[text()='次へ']\r\n",
       "pageElement" : "//div[@class='act-video-list']",
       "url" : "^https://www.minnano-av\\.com/"
    },
