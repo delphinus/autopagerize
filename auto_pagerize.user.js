@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240813094305
+// @version     0.1.20240818010239
 // ==/UserScript==
 
 function autoPagerize() {
@@ -6531,9 +6531,9 @@ function autoPagerize() {
       "url" : "^https://www\\.the-uranai\\.jp/"
    },
    {
-      "exampleUrl" : "https://kinmaweb.jp/archives/70121",
+      "exampleUrl" : "https://kinmaweb.jp/archives/70121 https://kinmaweb.jp/archives/70121/2",
       "nextLink" : "//link[@rel=\"next\"]",
-      "pageElement" : "//article/section/div[2]",
+      "pageElement" : "//article/section/div[contains(@class, 'kijiwrap')]",
       "url" : "^https?://kinmaweb\\.jp/archives/"
    },
    {
