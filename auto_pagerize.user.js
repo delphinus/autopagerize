@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240818124909
+// @version     0.1.20240819010236
 // ==/UserScript==
 
 function autoPagerize() {
@@ -1867,16 +1867,15 @@ function autoPagerize() {
    },
    {
       "exampleUrl" : "https://www.racedepartment.com/threads/assetto-corsa-latest-news-discussion.44395/",
-      "insertBefore" : "",
       "nextLink" : "//link[@rel=\"next\"]",
       "pageElement" : "//div[@class=\"p-body-pageContent\"]//article[contains(concat(\" \", normalize-space(@class), \" \"), \" message \")]",
-      "url" : "^https?://www\\.racedepartment\\.com/threads/?"
+      "url" : "^https?://www\\.(racedepartment\\.com|overtake\\.gg)/threads/?"
    },
    {
       "exampleUrl" : "https://www.racedepartment.com/downloads/categories/ac-tracks.8/\r\nhttps://www.racedepartment.com/search/15502838/?q=test&o=relevance\r\nhttps://www.racedepartment.com/\r\nhttps://www.racedepartment.com/whats-new/media/1019969/\r\nhttps://www.racedepartment.com/store/categories/fanatec.2/\r\n",
       "nextLink" : "//link[@rel=\"next\"]",
       "pageElement" : "descendant::*[./*[@data-author]][1]/*[@data-author]",
-      "url" : "^https?://www\\.racedepartment\\.com/"
+      "url" : "^https?://www\\.(racedepartment\\.com|overtake\\.gg)/"
    },
    {
       "exampleUrl" : "http://magazine-k.jp/page/2/ http://magazine-k.jp/2012/12/28/more-books-for-low-vision/",
