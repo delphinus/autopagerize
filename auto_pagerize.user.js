@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240819010236
+// @version     0.1.20240825034303
 // ==/UserScript==
 
 function autoPagerize() {
@@ -2644,11 +2644,11 @@ function autoPagerize() {
       "url" : "^https?://www\\.kaiyukan\\.com/connect/"
    },
    {
-      "exampleUrl" : "",
+      "exampleUrl" : "https://www.chunichi.co.jp/article/947611/1",
       "insertBefore" : "id('entry')/div[div[@class='pager']]",
       "nextLink" : "//div[@class='pager']//a[@class='btn' and span/i[contains(concat(' ', @class, ' '), ' fa-arrow-right ')]]",
       "pageElement" : "id('entry')/div[(@class='block' and not(.//p[@class='hdg'])) or .//div[@class='thumb']]",
-      "url" : "^https://www.chunichi.co.jp/article/.+?"
+      "url" : "^https://www\\.chunichi\\.co\\.jp/article/\\d+"
    },
    {
       "exampleUrl" : "https://sauna-ikitai.com/has_private_sauna?page=2",
@@ -11639,10 +11639,10 @@ function autoPagerize() {
    },
    {
       "comment" : "記事の取りこぼし修正。記事に css: order があるため zone__content を取得。",
-      "exampleUrl" : "https://www.huffingtonpost.jp/news/",
+      "exampleUrl" : "https://www.huffingtonpost.jp/news/\r\nhttps://www.huffingtonpost.co.uk/news/",
       "nextLink" : "//a[@rel='next']",
       "pageElement" : "//div[starts-with(@id, 'zone-twilight')]//div[@class='zone__content']",
-      "url" : "^https?://www\\.huffingtonpost\\.jp/"
+      "url" : "^https?://www\\.huffingtonpost(\\.co)?\\.\\w{2}/"
    },
    {
       "exampleUrl" : "http://www.soccerdigestweb.com/?pageID=1",
@@ -14720,10 +14720,10 @@ function autoPagerize() {
       "url" : "^http://dreamaker\\.jp/(?:dream|materials/(?:chara|bg))"
    },
    {
-      "exampleUrl" : "https://www.chunichi.co.jp/tags/tag_shimenlink/ https://www.chunichi.co.jp/chuspo/dragons/draban/",
+      "exampleUrl" : "https://www.chunichi.co.jp/tags/tag_shimenlink/ https://www.chunichi.co.jp/chuspo/dragons/draban/\r\nhttps://www.chunichi.co.jp/tags/yourdigital/yourdigital_repo",
       "nextLink" : "descendant::li[contains(@class,\"is-active\")][1]/following-sibling::li[1]/a",
-      "pageElement" : "//main//div[@class=\"l-artlst001\"]|//main//*[./div[@class=\"wrp lv2\"]][.//div[@class=\"thumb\"] and not(.//ul)]",
-      "url" : "^https://(www\\.)?chunichi\\.co\\.jp/(chuspo|tags)/"
+      "pageElement" : "//main//div[@class=\"cmp-thmb001 pt-20 pb-20\" or @class=\"l-artlst001\"]",
+      "url" : "^https://www\\.chunichi\\.co\\.jp/"
    },
    {
       "exampleUrl" : "https://sneakerbunko.jp/series/\r\nhttps://sneakerbunko.jp/product/index2.html/keyword/%E5%90%9B/",
@@ -21363,10 +21363,10 @@ function autoPagerize() {
       "url" : "^https://(www\\.)?e-tomcat\\.com/products/"
    },
    {
-      "exampleUrl" : "http://www.photolibrary.jp/search/?p=%B3%D8%B9%BB",
+      "exampleUrl" : "https://www.photolibrary.jp/search/?p=%B3%D8%B9%BB\r\nhttps://www.photolibrary.jp/newarrival/\r\nhttps://www.photolibrary.jp/cat/cooking_1.html",
       "nextLink" : "//span[@class='next']//a",
-      "pageElement" : "//ul[@class='pList pListLarge']/li[.//@class='photo']",
-      "url" : "^https?://(?:www\\.)?photolibrary\\.jp/search/"
+      "pageElement" : "//ul[@class='pList pListLarge']/li[.//*[contains(@class, 'photo')]]",
+      "url" : "^https?://(?:www\\.)?photolibrary\\.jp/"
    },
    {
       "comment" : "・rev=154692 のような /2/ 決め打ちだとちょうど3ページしかないケースの3ページ目で逆読みが発生する ex.) https://ncode.syosetu.com/n0058gd/3/ (※ 更新停止のものがよりサンプルとして望ましい)\r\n・いっそ「次へ」や「 >> 」決め打ちのほうが、少なくともなろうにおいては意味が明確なので良いかもしれない\r\n・web-archive についてはなろうのアーカイブは現状消されているようなのでカバーしない",
