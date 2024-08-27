@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240825034303
+// @version     0.1.20240827125039
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://mirai-dora-world-online.com/ic",
+      "insertBefore" : "",
+      "nextLink" : "//div[@class='sysPagination']/ul/li[last()]/a",
+      "pageElement" : "//div[@class='sysItemList  aa']/ul",
+      "url" : "^https://mirai-dora-world-online\\.com/"
+   },
    {
       "exampleUrl" : "https://www.minnano-av.com/actress218689.html",
       "nextLink" : "//div[@class='pagination']/b/a[text()='次へ']\r\n",
