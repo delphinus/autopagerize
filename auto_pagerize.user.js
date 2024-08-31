@@ -6,7 +6,7 @@
 // @include     *
 // @homepage    https://github.com/delphinus/autopagerize
 // @updateURL   https://github.com/delphinus/autopagerize/raw/main/auto_pagerize.user.js
-// @version     0.1.20240827125039
+// @version     0.1.20240831010235
 // ==/UserScript==
 
 function autoPagerize() {
@@ -22,6 +22,13 @@ function autoPagerize() {
     ]
     
     var SITEINFO = [
+   {
+      "exampleUrl" : "https://www.huffpost.com/news/",
+      "insertBefore" : "",
+      "nextLink" : "//a[@rel='next']",
+      "pageElement" : "//div[starts-with(@id, 'zone-twilight')]//div[@class='zone__content']",
+      "url" : "^https://www\\.huffpost\\.com/"
+   },
    {
       "exampleUrl" : "https://mirai-dora-world-online.com/ic",
       "insertBefore" : "",
